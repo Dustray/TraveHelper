@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">乐游</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_main">乐游</string>
+    <string name="title_activity_weather">天气</string>
+    <string name="title">天气预报</string>
+    <string name="city">城市</string>
+    <string name="province">省份</string>
+    <string name="today_wea">今日天气</string>
+    <string name="qiweng">气温：</string>
+    <string name="jinri">天气实况</string>
+    <string name="fengsu">风速：</string>
+    <string name="shidu">湿度：</string>
+    <string name="fengxiang">风向：</string>
+    <string name="kongqi">空气质量：</string>
+    <string name="tianqi">天气：</string>
+    <string name="zhiwai">紫外线强度：</string>
+    <string name="weather">天气</string>
+    <string name="searchweather">查询</string>
+    <string name="city_str">城</string>
+    <string name="xiaotieshi">今日小贴士今日小贴士今日小贴士今日小贴士今日小贴士</string>
+    <string name="title_activity_search">查询</string>
+    <string name="select">景点</string>
+    <string name="title_activity_logo">LogoActivity</string>
+    <string name="title_activity_amap">地图</string>
+    <string name="real_time_traffic">实时路况</string>
+    <string name="choose_layer">选择图层</string>
+    <string name="alert_dialog_cancel">取消</string>
+    <string name="search_location">查询地址</string>
+    <string name="search_transit">交通查询</string>
+    <string name="search_poi">搜索</string>
+    <string name="exit_map">退出</string>
+    <string name="dialog_input_address">请输入地址：</string>
+    <string name="dialog_input_latitude">请输入纬度：</string>
+    <string name="dialog_input_longitude">请输入经度：</string>
+    <string name="map">地图</string>
+    <string name="toplayout_tv_search">查询</string>
+    <string name="search_title">搜索关键字</string>
+    <string name="title_activity_tool">工具</string>
+    <string name="tool">更多</string>
+    <string name="title_activity_calendar">日历</string>
+    <string name="rili">日历测试</string>
+    <string name="tuijian">推荐</string>
+
+    <!-- 星期 -->
+    <string name="Mon">一</string>
+    <string name="Tue">二</string>
+    <string name="Wed">三</string>
+    <string name="Thu">四</string>
+    <string name="Fri">五</string>
+    <string name="Sat">六</string>
+    <string name="Sun">日</string>
+    <string name="title_activity_compass">指南针</string>
+    <string name="title_activity_diary">旅游日记</string>
+    <string name="title_activity_edit">更改日记</string>
+    <string name="title_activity_writer">写日记</string>
+    <string name="writer">写日志</string>
+    <string name="quit">退出</string>
+    <string name="diay_title">日志标题</string>
+    <string name="content">日志内容</string>
+    <string name="submit">保存日志</string>
+    <string name="list">返回列表</string>
+    <string name="title_activity_show">日记展示</string>
+    <string name="title_activity_chang_bachground">ChangBachgroundActivity</string>
+    <string name="title_activity_shan_guang_d">闪光灯</string>
+    <string name="title_activity_operation">操作指南</string>
+    <string name="banben">版本号：1.0.1</string>
+    <string name="gongneng">\t特有功能：含有上千条旅游景点信息，搜索景点方便快捷；提供最近三天的天气预报，为您出游保驾护航；地图定位，搜索周边美食宾馆</string>
+    <string name="operation">\t该软件是一款十分适合旅游的软件，出游查景点查天气看地图最优的选择，还有手电筒、日历、记事本等多个小功能为你的旅途提供贴心服务。</string>
+    <string name="banquan">\t版权所有：滨州学院计算机系sky-n\n\t更多信息：请登录滨州学院官方网站</string>
+    <string name="gengduo">\t此版本适用于android2.3.3及以上操作系统系列手机，对于在其他操作系统平台的手机上使用本软件，出现任何问题，本小组不承担责任。\n本软件下载，安装和使用免费，下载使用过程中产生的GPRS数据流量费用，由运营商收取。</string>
+    <string name="back">返回主菜单</string>
+    <string name="title_activity_tuijian">TuijianActivity</string>
+    
+</resources>

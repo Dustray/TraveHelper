@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="bzu.skyn.travehelper"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:maxSdkVersion="25"
+        android:minSdkVersion="19"
+        android:targetSdkVersion="25" />
+
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.autofocus" />
+
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" >
+        <uses-library android:name="android.test.runner" />
+        <meta-data android:name="com.amap.api.v2.apikey" android:value="3dffcecbd1e9e78e56e33f096bfc1887">
+            //开发者申请的key
+        </meta-data>
+        <activity
+            android:name="bzu.skyn.travehelper.WelcomeActivity"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="bzu.skyn.travehelper.MainActivity"
+            android:label="@string/title_activity_main" >
+        </activity>
+        <activity
+            android:name="bzu.skyn.travehelper.WeatherActivity"
+            android:label="@string/title_activity_weather" >
+        </activity>
+        <activity
+            android:name="bzu.skyn.travehelper.SearchActivity"
+            android:label="@string/title_activity_search" >
+        </activity>
+
+        <provider
+            android:name="bzu.skyn.travehelper.map.Suggestion"
+            android:authorities="com.zxy.amp.MySuggestionProvider" >
+        </provider>
+
+        <activity
+            android:name="bzu.skyn.travehelper.AMapActivity"
+            android:label="@string/title_activity_amap" >
+        </activity>
+        <activity
+            android:name="bzu.skyn.travehelper.LogoActivity"
+            android:label="@string/title_activity_logo" >
+        </activity>
+        <activity
+            android:name="bzu.skyn.travehelper.ToolActivity"
+            android:label="@string/title_activity_tool" >
+        </activity>
+        <activity
+            android:name="bzu.skyn.travehelper.CalendarActivity"
+            android:label="@string/title_activity_calendar" >
+        </activity>
+        <activity
+            android:name="bzu.skyn.travehelper.CompassActivity"
+            android:label="@string/title_activity_compass" >
+        </activity>
+        <activity
+            android:name="bzu.skyn.travehelper.DiaryActivity"
+            android:label="@string/title_activity_diary" >
+        </activity>
+        <activity
+            android:name="bzu.skyn.travehelper.EditActivity"
+            android:label="@string/title_activity_edit" >
+        </activity>
+        <activity
+            android:name="bzu.skyn.travehelper.WriterActivity"
+            android:label="@string/title_activity_writer" >
+        </activity>
+        <activity
+            android:name="bzu.skyn.travehelper.ShowActivity"
+            android:label="@string/title_activity_show" >
+        </activity>
+        <activity
+            android:name="bzu.skyn.travehelper.ChangBachgroundActivity"
+            android:label="@string/title_activity_chang_bachground" >
+        </activity>
+        <activity
+            android:name="bzu.skyn.travehelper.ShanGuangDActivity"
+            android:label="@string/title_activity_shan_guang_d" >
+        </activity>
+        <activity
+            android:name="bzu.skyn.travehelper.OperationActivity"
+            android:label="@string/title_activity_operation" >
+        </activity>
+        <activity
+            android:name="bzu.skyn.travehelper.TuijianActivity"
+            android:label="@string/title_activity_tuijian" >
+        </activity>
+    </application>
+
+</manifest>

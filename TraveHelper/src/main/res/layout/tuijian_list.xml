@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="品牌：" />
+
+        <TextView
+            android:id="@+id/pinpai"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="七天连锁酒店" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="品牌说明" />
+
+        <TextView
+            android:id="@+id/shuoming"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="7天连锁酒店集团（7 Days Group Holdings Limited）创立于2005年，2009年11月20日在美国纽约证券交易所上市（股票代码：SVN）。作为第一家登陆纽交所的中国酒店集团，7天连锁酒店秉承让顾客“天天睡好觉”的愿景，致力为注重价值的商旅客人提供干净、环保、舒适、安全的住宿服务，满足客户核心的住宿需求。" />
+
+    </LinearLayout>
+   
+</LinearLayout>

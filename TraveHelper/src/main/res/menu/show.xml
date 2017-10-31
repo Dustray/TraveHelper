@@ -1,0 +1,16 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/showback"
+        android:orderInCategory="100"
+        android:title="@string/back"/>
+    <item
+        android:id="@+id/showbacklist"
+        android:orderInCategory="100"
+        android:title="@string/list"/>
+    <item
+        android:id="@+id/showquit"
+        android:orderInCategory="100"
+        android:title="@string/quit"/>
+
+</menu>

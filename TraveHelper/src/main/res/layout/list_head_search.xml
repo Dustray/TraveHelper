@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="滨州:"
+            android:textSize="20dp" />
+        <bzu.skyn.travehelper.search.SceneryScrollView
+            android:id="@+id/scenery_vf_scrollview"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView1"
+            android:focusable="false"
+            android:scrollbars="none" >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <ViewFlipper
+                    android:id="@+id/mViewFliper_vf"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" >
+
+                        <ImageView
+                            android:layout_width="fill_parent"
+                            android:layout_height="160dip"
+                            android:background="@drawable/fengjing1" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical" >
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="160dip"
+                            android:background="@drawable/suzhouyuanlin" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical" >
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="160dip"
+                            android:background="@drawable/shanghai" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical" >
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="160dip"
+                            android:background="@drawable/hainansanya" />
+                    </LinearLayout>
+                </ViewFlipper>
+
+                <LinearLayout
+                    android:id="@+id/home_date_ratio_ly"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/mViewFliper_vf" >
+
+                    <include layout="@layout/search_img" />
+                </LinearLayout>
+            </RelativeLayout>
+        </bzu.skyn.travehelper.search.SceneryScrollView>
+
+        <RelativeLayout
+            android:visibility="gone"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/scenery_vf_scrollview"
+            android:layout_marginTop="10dp" >
+
+            <EditText
+                android:id="@+id/editText1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_toLeftOf="@+id/button1"
+                android:hint="请输入景点信息"
+                android:ems="10" />
+
+            <Button
+                android:id="@+id/button1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="10dp"
+
+                android:background="@drawable/btn_poi_search_normal"
+                />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_below="@+id/editText1"
+                android:orientation="vertical" >
+
+
+                <TextView
+                    android:id="@+id/traveltext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/white"
+                    android:textSize="20dp"/>
+
+            </LinearLayout>
+        </RelativeLayout>
+</RelativeLayout>

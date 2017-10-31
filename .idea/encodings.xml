@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding" defaultCharsetForPropertiesFiles="UTF-8">
+    <file url="file://$PROJECT_DIR$/TraveHelper/src/main/java/bzu/skyn/travehelper/AMapActivity.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/TraveHelper/src/main/java/bzu/skyn/travehelper/CalendarActivity.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/TraveHelper/src/main/java/bzu/skyn/travehelper/DiaryActivity.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/TraveHelper/src/main/java/bzu/skyn/travehelper/EditActivity.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/TraveHelper/src/main/java/bzu/skyn/travehelper/MainActivity.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/TraveHelper/src/main/java/bzu/skyn/travehelper/OperationActivity.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/TraveHelper/src/main/java/bzu/skyn/travehelper/SearchActivity.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/TraveHelper/src/main/java/bzu/skyn/travehelper/ShanGuangDActivity.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/TraveHelper/src/main/java/bzu/skyn/travehelper/ShowActivity.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/TraveHelper/src/main/java/bzu/skyn/travehelper/TuijianActivity.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/TraveHelper/src/main/java/bzu/skyn/travehelper/WeatherActivity.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/TraveHelper/src/main/java/bzu/skyn/travehelper/WelcomeActivity.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/TraveHelper/src/main/java/bzu/skyn/travehelper/WriterActivity.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/TraveHelper/src/main/java/bzu/skyn/travehelper/calendar/CalendarAdapter.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/TraveHelper/src/main/java/bzu/skyn/travehelper/calendar/CalendarGridView.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/TraveHelper/src/main/java/bzu/skyn/travehelper/diary/DBOpenHelper.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/TraveHelper/src/main/java/bzu/skyn/travehelper/diary/Diary.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/TraveHelper/src/main/java/bzu/skyn/travehelper/diary/DiaryDao.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/TraveHelper/src/main/java/bzu/skyn/travehelper/map/Cord.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/TraveHelper/src/main/java/bzu/skyn/travehelper/map/GetLocation.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/TraveHelper/src/main/java/bzu/skyn/travehelper/map/SearchAdapter.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/TraveHelper/src/main/java/bzu/skyn/travehelper/tools/DataTool.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/TraveHelper/src/main/java/bzu/skyn/travehelper/tools/ImageTool.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/TraveHelper/src/main/java/bzu/skyn/travehelper/tools/Scence.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/TraveHelper/src/main/java/bzu/skyn/travehelper/util/SoapUtil.java" charset="UTF-8" />
+    <file url="PROJECT" charset="UTF-8" />
+  </component>
+</project>
