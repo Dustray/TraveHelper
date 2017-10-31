@@ -30,19 +30,23 @@ import com.amap.api.maps2d.model.Marker;
 import com.amap.api.maps2d.model.MarkerOptions;
 import com.amap.api.maps2d.model.MyLocationStyle;
 import com.amap.api.services.core.LatLonPoint;
+import com.amap.api.services.core.PoiItem;
 import com.amap.api.services.geocoder.GeocodeAddress;
 import com.amap.api.services.geocoder.GeocodeQuery;
 import com.amap.api.services.geocoder.GeocodeResult;
 import com.amap.api.services.geocoder.GeocodeSearch;
 import com.amap.api.services.geocoder.RegeocodeQuery;
 import com.amap.api.services.geocoder.RegeocodeResult;
+import com.amap.api.services.poisearch.PoiResult;
+import com.amap.api.services.poisearch.PoiSearch;
 
 import java.util.List;
 
 import bzu.skyn.travehelper.tools.FastToast;
 import bzu.skyn.travehelper.util.GaodeSearchAdapter;
+import bzu.skyn.travehelper.util.GaodeSearchPoiAdapter;
 
-public class AMapActivity extends Activity implements View.OnClickListener, GeocodeSearch.OnGeocodeSearchListener {
+public class AMapActivity extends Activity implements View.OnClickListener, GeocodeSearch.OnGeocodeSearchListener, PoiSearch.OnPoiSearchListener {
 
     private MapView mMapView = null;
     private Button btnTrafficCondition, btnSatellite;
@@ -56,6 +60,7 @@ public class AMapActivity extends Activity implements View.OnClickListener, Geoc
     private GeocodeSearch geocoderSearch;
     private GeocodeQuery query;
     private RegeocodeQuery query1;
+    PoiSearch.Query query2;
     private String myCity = "010";
     public AMapLocationClient mLocationClient = null;
     //声明定位回调监听器
@@ -154,8 +159,20 @@ public class AMapActivity extends Activity implements View.OnClickListener, Geoc
 
     private void goSearch() {
         // name表示地址，第二个参数表示查询城市，中文或者中文全拼，citycode、adcode
-        query = new GeocodeQuery(etInputSearch.getText().toString(), myCity);
-        geocoderSearch.getFromLocationNameAsyn(query);
+        // TODO: 2017/10/31 0031 改变是否Poi 
+        //query = new GeocodeQuery(etInputSearch.getText().toString(), myCity);
+        //geocoderSearch.getFromLocationNameAsyn(query);
+
+        query2 = new PoiSearch.Query(etInputSearch.getText().toString(), "", myCity);
+        //keyWord表示搜索字符串，
+        //第二个参数表示POI搜索类型，二者选填其一，选用POI搜索类型时建议填写类型代码，码表可以参考下方（而非文字）
+        //cityCode表示POI搜索区域，可以是城市编码也可以是城市名称，也可以传空字符串，空字符串代表全国在全国范围内进行搜索
+        query2.setPageSize(20);// 设置每页最多返回多少条poiitem
+        query2.setPageNum(1);//设置查询页码
+
+        PoiSearch poiSearch = new PoiSearch(this, query2);
+        poiSearch.setOnPoiSearchListener(this);
+        poiSearch.searchPOIAsyn();
     }
 
     private void goSearchWithlatLon(double li, double lo) {
@@ -279,7 +296,16 @@ public class AMapActivity extends Activity implements View.OnClickListener, Geoc
                 new LatLng(ga.getLatLonPoint().getLatitude(), ga.getLatLonPoint().getLongitude()), 15, 0, 0));
         aMap.animateCamera(mCameraUpdate);
     }
-
+    private void showOnMapPoi(PoiItem ga) {
+        LatLng latLng = new LatLng(ga.getLatLonPoint().getLatitude(), ga.getLatLonPoint().getLongitude());
+        MarkerOptions markerO = new MarkerOptions();
+        markerO.position(latLng);
+        markerO.title(ga.getTitle()).snippet(ga.getLatLonPoint().toString());
+        marker = aMap.addMarker(markerO);
+        CameraUpdate mCameraUpdate = CameraUpdateFactory.newCameraPosition(new CameraPosition(
+                new LatLng(ga.getLatLonPoint().getLatitude(), ga.getLatLonPoint().getLongitude()), 15, 0, 0));
+        aMap.animateCamera(mCameraUpdate);
+    }
     public void hiddenSearchList(View v) {
         searchListFrame.setVisibility(View.GONE);
     }
@@ -302,5 +328,45 @@ public class AMapActivity extends Activity implements View.OnClickListener, Geoc
         mLocationClient.setLocationOption(mLocationOption);
         //启动定位
         mLocationClient.startLocation();
+    }
+
+    @Override
+    public void onPoiSearched(PoiResult poiResult, int i) {
+        if (i == 1000) {
+
+            final List<PoiItem> resultList = poiResult.getPois();
+            //FastToast.showToast(AMapActivity.this, "点击了" + resultList.size());
+            GaodeSearchPoiAdapter adapter = new GaodeSearchPoiAdapter(this, R.layout.item_search_location, resultList);
+            lvSearchList.setAdapter(adapter);
+            lvSearchList.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+                @Override
+                public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+                    PoiItem ga = resultList.get(i);
+                    //FastToast.showToast(AMapActivity.this, "你点击了" + ga.getBuilding() + "，经纬度：" + ga.getLatLonPoint());
+                    searchListFrame.setVisibility(View.GONE);
+                    InputMethodManager imm = (InputMethodManager)
+                            getSystemService(AMapActivity.this.INPUT_METHOD_SERVICE);
+                    imm.hideSoftInputFromWindow(view.getWindowToken(), 0);
+                    showOnMapPoi(ga);
+                }
+            });
+        } else {
+            FastToast.showToast(AMapActivity.this, "查询出错，请检查网络，错误代码：" + i);
+        }
+    }
+
+    @Override
+    public void onPoiItemSearched(PoiItem poiItem, int i) {
+
+    }
+
+    @Override
+    public void onBackPressed() {
+
+        if(searchListFrame.getVisibility()==View.VISIBLE){
+            searchListFrame.setVisibility(View.GONE);
+        }else{
+            super.onBackPressed();
+        }
     }
 }

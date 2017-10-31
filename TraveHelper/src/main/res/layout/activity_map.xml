@@ -91,12 +91,13 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:visibility="gone"
+        android:background="#aabbbbbb"
         android:onClick="hiddenSearchList"
         android:layout_marginTop="50dp">
     <ListView
         android:id="@+id/lv_search_list"
         android:layout_width="match_parent"
-        android:layout_height="100dp"
+        android:layout_height="wrap_content"
         android:divider="#00000000"
         android:dividerHeight="0dip"
         ></ListView>

@@ -27,7 +27,7 @@
   </component>
   <component name="AndroidLogFilters">
     <option name="TOOL_WINDOW_LOG_LEVEL" value="info" />
-    <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
+    <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="No Filters" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fab1c570-c7fe-40e5-a10c-45ef2f4e0b37" name="Default" comment="" />
@@ -65,11 +65,11 @@
       <file leaf-file-name="AMapActivity.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/TraveHelper/src/main/java/bzu/skyn/travehelper/AMapActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="595">
-              <caret line="234" column="16" selection-start-line="234" selection-start-column="16" selection-end-line="234" selection-end-column="16" />
+            <state relative-caret-position="411">
+              <caret line="159" column="0" selection-start-line="159" selection-start-column="0" selection-end-line="159" selection-end-column="0" />
               <folding>
                 <element signature="method#onCreate#0;class#AMapActivity#0" expanded="false" />
-                <element signature="method#onTextChanged#0;class#3664:4079" expanded="false" />
+                <element signature="method#onTextChanged#0;class#3922:4337" expanded="false" />
                 <element signature="method#initMap#0;class#AMapActivity#0" expanded="false" />
                 <element signature="method#goSearch#0;class#AMapActivity#0" expanded="false" />
                 <element signature="method#goSearchWithlatLon#0;class#AMapActivity#0" expanded="false" />
@@ -77,13 +77,29 @@
                 <element signature="method#onResume#0;class#AMapActivity#0" expanded="false" />
                 <element signature="method#onPause#0;class#AMapActivity#0" expanded="false" />
                 <element signature="method#onSaveInstanceState#0;class#AMapActivity#0" expanded="false" />
+                <element signature="method#onClick#0;class#AMapActivity#0" expanded="false" />
                 <element signature="method#onRegeocodeSearched#0;class#AMapActivity#0" expanded="false" />
-                <element signature="e#10068#10765#0" expanded="true" />
-                <element signature="e#10764#10765#0" expanded="true" />
-                <element signature="e#11545#11546#0" expanded="true" />
-                <element signature="e#11601#11602#0" expanded="true" />
-                <marker date="1509451354732" expanded="false" signature="3794:3810" ph="{...}" />
+                <element signature="method#onGeocodeSearched#0;class#AMapActivity#0" expanded="false" />
+                <element signature="e#10857#11554#0" expanded="true" />
+                <element signature="e#11553#11554#0" expanded="true" />
+                <element signature="method#showOnMap#0;class#AMapActivity#0" expanded="false" />
+                <element signature="method#showOnMapPoi#0;class#AMapActivity#0" expanded="false" />
+                <element signature="method#getMyLocation#0;class#AMapActivity#0" expanded="false" />
+                <element signature="method#onPoiSearched#0;class#AMapActivity#0" expanded="false" />
+                <element signature="e#14382#15075#0" expanded="true" />
+                <element signature="e#15074#15075#0" expanded="true" />
+                <marker date="1509453085157" expanded="false" signature="4052:4068" ph="{...}" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GaodeSearchPoiAdapter.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/TraveHelper/src/main/java/bzu/skyn/travehelper/util/GaodeSearchPoiAdapter.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="224">
+              <caret line="21" column="63" selection-start-line="21" selection-start-column="56" selection-end-line="21" selection-end-column="63" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -95,7 +111,7 @@
           </provider>
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="297">
-              <caret line="75" column="42" selection-start-line="75" selection-start-column="29" selection-end-line="75" selection-end-column="42" />
+              <caret line="93" column="37" selection-start-line="93" selection-start-column="37" selection-end-line="93" selection-end-column="37" />
               <folding />
             </state>
           </provider>
@@ -1793,9 +1809,12 @@
         <option value="$PROJECT_DIR$/TraveHelper/src/main/res/drawable-mdpi/btn_input_white.xml" />
         <option value="$PROJECT_DIR$/TraveHelper/src/main/res/drawable-mdpi/radius_white_frame.xml" />
         <option value="$PROJECT_DIR$/TraveHelper/src/main/res/layout/item_search_location.xml" />
-        <option value="$PROJECT_DIR$/TraveHelper/src/main/res/layout/activity_map.xml" />
         <option value="$PROJECT_DIR$/TraveHelper/src/main/res/layout/activity_search.xml" />
         <option value="$PROJECT_DIR$/TraveHelper/src/main/java/bzu/skyn/travehelper/util/GaodeSearchAdapter.java" />
+        <option value="$PROJECT_DIR$/TraveHelper/src/main/java/bzu/skyn/travehelper/tools/GaodeSearchAdapter.java" />
+        <option value="$PROJECT_DIR$/TraveHelper/src/main/java/bzu/skyn/travehelper/tools/GaodeSearchPoiAdapter.java" />
+        <option value="$PROJECT_DIR$/TraveHelper/src/main/java/bzu/skyn/travehelper/util/GaodeSearchPoiAdapter.java" />
+        <option value="$PROJECT_DIR$/TraveHelper/src/main/res/layout/activity_map.xml" />
         <option value="$PROJECT_DIR$/TraveHelper/src/main/java/bzu/skyn/travehelper/AMapActivity.java" />
       </list>
     </option>
@@ -1950,8 +1969,30 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="AttractionAdapter.java" />
+              <option name="myItemId" value="GaodeSearchAdapter.java" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.ClassesTreeStructureProvider$PsiClassOwnerTreeNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TraveHelper" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TraveHelper-TraveHelper" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidSourceTypeNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="travehelper" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tools" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
@@ -1977,11 +2018,11 @@
       <recent name="C:\Users\Dustray\AndroidStudioProjects\TraveHelper\TraveHelper\src\main\res\drawable-mdpi" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Dustray\AndroidStudioProjects\TraveHelper\TraveHelper\src\main\java\bzu\skyn\travehelper\tools" />
       <recent name="C:\Users\Dustray\AndroidStudioProjects\TraveHelper\TraveHelper\src\main\java\bzu\skyn\travehelper\util" />
       <recent name="C:\Users\Dustray\AndroidStudioProjects\TraveHelper\TraveHelper\src\main\res\layout" />
       <recent name="C:\Users\Dustray\AndroidStudioProjects\TraveHelper\TraveHelper\src\main\res\drawable-mdpi" />
       <recent name="C:\Users\Dustray\AndroidStudioProjects\TraveHelper\TraveHelper\src\main\res\drawable" />
-      <recent name="C:\Users\Dustray\AndroidStudioProjects\TraveHelper\TraveHelper\libs" />
     </key>
   </component>
   <component name="RunManager" selected="Android App.TraveHelper-TraveHelper">
@@ -2319,7 +2360,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-9" y="-9" width="1938" height="1098" extended-state="6" />
+    <frame x="-9" y="-9" width="1938" height="1098" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32962137" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -2371,13 +2412,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/TraveHelper/src/main/java/bzu/skyn/travehelper/diary/Diary.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="74">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/TraveHelper/src/main/java/bzu/skyn/travehelper/diary/DBOpenHelper.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="189">
@@ -2815,24 +2849,32 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/TraveHelper/src/main/java/bzu/skyn/travehelper/util/GaodeSearchPoiAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="21" column="63" selection-start-line="21" selection-start-column="56" selection-end-line="21" selection-end-column="63" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/TraveHelper/src/main/res/layout/activity_map.xml">
       <provider editor-type-id="android-designer2">
         <state />
       </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="297">
-          <caret line="75" column="42" selection-start-line="75" selection-start-column="29" selection-end-line="75" selection-end-column="42" />
+          <caret line="93" column="37" selection-start-line="93" selection-start-column="37" selection-end-line="93" selection-end-column="37" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/TraveHelper/src/main/java/bzu/skyn/travehelper/AMapActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="595">
-          <caret line="234" column="16" selection-start-line="234" selection-start-column="16" selection-end-line="234" selection-end-column="16" />
+        <state relative-caret-position="411">
+          <caret line="159" column="0" selection-start-line="159" selection-start-column="0" selection-end-line="159" selection-end-column="0" />
           <folding>
             <element signature="method#onCreate#0;class#AMapActivity#0" expanded="false" />
-            <element signature="method#onTextChanged#0;class#3664:4079" expanded="false" />
+            <element signature="method#onTextChanged#0;class#3922:4337" expanded="false" />
             <element signature="method#initMap#0;class#AMapActivity#0" expanded="false" />
             <element signature="method#goSearch#0;class#AMapActivity#0" expanded="false" />
             <element signature="method#goSearchWithlatLon#0;class#AMapActivity#0" expanded="false" />
@@ -2840,12 +2882,18 @@
             <element signature="method#onResume#0;class#AMapActivity#0" expanded="false" />
             <element signature="method#onPause#0;class#AMapActivity#0" expanded="false" />
             <element signature="method#onSaveInstanceState#0;class#AMapActivity#0" expanded="false" />
+            <element signature="method#onClick#0;class#AMapActivity#0" expanded="false" />
             <element signature="method#onRegeocodeSearched#0;class#AMapActivity#0" expanded="false" />
-            <element signature="e#10068#10765#0" expanded="true" />
-            <element signature="e#10764#10765#0" expanded="true" />
-            <element signature="e#11545#11546#0" expanded="true" />
-            <element signature="e#11601#11602#0" expanded="true" />
-            <marker date="1509451354732" expanded="false" signature="3794:3810" ph="{...}" />
+            <element signature="method#onGeocodeSearched#0;class#AMapActivity#0" expanded="false" />
+            <element signature="e#10857#11554#0" expanded="true" />
+            <element signature="e#11553#11554#0" expanded="true" />
+            <element signature="method#showOnMap#0;class#AMapActivity#0" expanded="false" />
+            <element signature="method#showOnMapPoi#0;class#AMapActivity#0" expanded="false" />
+            <element signature="method#getMyLocation#0;class#AMapActivity#0" expanded="false" />
+            <element signature="method#onPoiSearched#0;class#AMapActivity#0" expanded="false" />
+            <element signature="e#14382#15075#0" expanded="true" />
+            <element signature="e#15074#15075#0" expanded="true" />
+            <marker date="1509453085157" expanded="false" signature="4052:4068" ph="{...}" />
           </folding>
         </state>
       </provider>
