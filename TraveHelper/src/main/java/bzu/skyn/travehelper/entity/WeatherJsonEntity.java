@@ -19,6 +19,16 @@ public class WeatherJsonEntity {
     private String windSpeed;
     private String lifeIndex;
     private String uv;
+    private String codeDay;
+private String precip;
+
+    public String getPrecip() {
+        return precip;
+    }
+
+    public void setPrecip(String precip) {
+        this.precip = precip;
+    }
 
     public String getCity() {
         return city;
@@ -106,5 +116,13 @@ public class WeatherJsonEntity {
 
     public void setUv(String uv) {
         this.uv = uv;
+    }
+
+    public String getCodeDay() {
+        return codeDay;
+    }
+
+    public void setCodeDay(String codeDay) {
+        this.codeDay = codeDay;
     }
 }

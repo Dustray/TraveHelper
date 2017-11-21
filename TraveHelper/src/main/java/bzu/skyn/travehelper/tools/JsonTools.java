@@ -15,6 +15,8 @@ import java.util.List;
 import java.util.ListIterator;
 
 import bzu.skyn.travehelper.entity.AttractionEntity;
+import bzu.skyn.travehelper.entity.CityEntity;
+import bzu.skyn.travehelper.entity.ProvinceEntity;
 import bzu.skyn.travehelper.entity.WeatherJsonEntity;
 
 /**
@@ -32,8 +34,6 @@ public class JsonTools {
         JsonObject obj = (JsonObject) parser.parse(jsonString); /* 获取返回状态码 */
         String resultCode = obj.get("showapi_res_code").getAsString(); /* 如果状态码是200说明返回数据成功*/
         if (0 == Integer.parseInt(resultCode)) {
-            Log.i("logme","%%%%%%%%%%%%%%%%");
-            //Log.i("logme","%%%%%%%%%%%%%%%%");
             //JsonArray futureWeatherArray = obj.get("results").getAsJsonArray();
 
             //JsonObject jLocation = futureWeatherArray.get(0).getAsJsonObject();
@@ -48,7 +48,7 @@ public class JsonTools {
                 attEntity.setAddress(item.get("cityName").getAsString()+item.get("areaName").getAsString());
                 attEntity.setName(item.get("name").getAsString());
                 attEntity.setContent(item.get("summary").getAsString());
-                Log.i("logme","get(\"name\"):"+item.get("name").getAsString());
+                //Log.i("logme","get(\"name\"):"+item.get("name").getAsString());
 
 
                 JsonArray picList = item.get("picList").getAsJsonArray();
@@ -62,6 +62,72 @@ public class JsonTools {
             }
 
         }
+        return list;
+    }
+    public static List<ProvinceEntity> jsonProvince(String jsonString){
+        List<ProvinceEntity> list =new ArrayList<ProvinceEntity>();
+
+        JsonParser parser = new JsonParser();// json 解析器
+        JsonObject obj = (JsonObject) parser.parse(jsonString); /* 获取返回状态码 */
+        String resultCode = obj.get("showapi_res_code").getAsString(); /* 如果状态码是200说明返回数据成功*/
+        if (0 == Integer.parseInt(resultCode)) {
+            JsonObject showapi_res_body = obj.get("showapi_res_body").getAsJsonObject();
+            //Log.i("logme","listsssssss:"+showapi_res_body);
+            JsonArray contentlist =showapi_res_body.get("list").getAsJsonArray();
+
+            //Log.i("logme","contentlist:"+contentlist.get(1).getAsJsonObject());
+            //Log.i("logme","list:"+pagebean);
+            for(int i = 0;i<contentlist.size();i++){
+                ProvinceEntity cEntity = new ProvinceEntity();
+                JsonObject item = contentlist.get(i).getAsJsonObject();
+                if(item.get("cityId") !=null)continue;
+                //Log.i("logme","list123:"+item);
+                //cEntity.setCityId(item.get("cityId").getAsString());
+                //cEntity.setCityName(item.get("cityName").getAsString());
+                cEntity.setIds(item.get("id").getAsString());
+                cEntity.setNames(item.get("name").getAsString());
+
+
+                list.add(cEntity);
+            }
+        }
+        return list;
+    }
+
+    public static List<CityEntity> jsonCity(String jsonString){
+        List<CityEntity> list =new ArrayList<CityEntity>();
+
+        JsonParser parser = new JsonParser();// json 解析器
+        JsonObject obj = (JsonObject) parser.parse(jsonString); /* 获取返回状态码 */
+        String resultCode = obj.get("showapi_res_code").getAsString(); /* 如果状态码是200说明返回数据成功*/
+        if (0 == Integer.parseInt(resultCode)) {
+            JsonObject showapi_res_body = obj.get("showapi_res_body").getAsJsonObject();
+            //Log.i("logme","list:"+showapi_res_body);
+            JsonArray contentlist =showapi_res_body.get("list").getAsJsonArray();
+
+           // Log.i("logme","contentlist:"+contentlist.get(1).getAsJsonObject());
+            //Log.i("logme","list:"+pagebean);
+            for(int i = 0;i<contentlist.size();i++){
+                CityEntity cEntity = new CityEntity();
+                JsonObject item = contentlist.get(i).getAsJsonObject();
+                if(item.get("cityId") !=null)continue;
+                //cEntity.setCityId(item.get("cityId").getAsString());
+                //cEntity.setCityName(item.get("cityName").getAsString());
+                cEntity.setIds(item.get("id").getAsString());
+                cEntity.setNames(item.get("name").getAsString());
+
+                cEntity.setProId(item.get("proId").getAsString());
+                cEntity.setProName(item.get("proName").getAsString());
+                //Log.i("logme","get测试:"+item.get("proId").getAsString()+item.get("name").getAsString());
+                if(cEntity.getNames()==null){
+                    cEntity.setNames("本省无信息");
+                }
+                list.add(cEntity);
+            }
+        }
+       //Log.i("logme","String测试***:"+(jsonString.length()>100?"一个":jsonString));
+//        Log.i("logme","list测试:"+list.get(0).getProName());
+
         return list;
     }
 }

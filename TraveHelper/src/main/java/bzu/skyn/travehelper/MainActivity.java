@@ -42,34 +42,34 @@ public class MainActivity extends TabActivity implements
 		tabHost.addTab(tabHost
 				.newTabSpec("ihome")
 				.setIndicator(getResources().getString(R.string.weather),
-						getResources().getDrawable(R.drawable.icon02))
+						getResources().getDrawable(R.drawable.ic_icon_home))
 				.setContent(ihome));
 		iseacher = new Intent(this, SearchActivity.class);
 		tabHost.addTab(tabHost
 				.newTabSpec("iseacher")
 				.setIndicator(getResources().getString(R.string.select),
-						getResources().getDrawable(R.drawable.icon_2_n))
+						getResources().getDrawable(R.drawable.ic_icon_spot))
 				.setContent(iseacher));
 
 		imap = new Intent(this, AMapActivity.class);
 		tabHost.addTab(tabHost
 				.newTabSpec("imap")
 				.setIndicator(getResources().getString(R.string.map),
-						getResources().getDrawable(R.drawable.icon3))
+						getResources().getDrawable(R.drawable.ic_icon_map))
 				.setContent(imap));
 
 		idiary = new Intent(this, TuijianActivity.class);
 		tabHost.addTab(tabHost
 				.newTabSpec("idiary")
 				.setIndicator(getResources().getString(R.string.tuijian),
-						getResources().getDrawable(R.drawable.icon_4_n))
+						getResources().getDrawable(R.drawable.ic_icon_recommend))
 				.setContent(idiary));
 
 		imore = new Intent(this, ToolActivity.class);
 		tabHost.addTab(tabHost
 				.newTabSpec("imore")
 				.setIndicator(getResources().getString(R.string.tool),
-						getResources().getDrawable(R.drawable.icon05))
+						getResources().getDrawable(R.drawable.ic_icon_more))
 				.setContent(imore));
 
 	}

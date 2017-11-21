@@ -53,7 +53,8 @@ public class GaodeSearchPoiAdapter extends ArrayAdapter<PoiItem> {
         String s = att.getCityName();
         if(!att.getAdName().equals(""))s = s + "-" + att.getAdName();
         if(!att.getBusinessArea().equals(""))s = s + "-" + att.getBusinessArea();
-        if(!att.getIndoorData().equals(""))s = s + "-" + att.getIndoorData();
+        if(!att.getSnippet().equals(""))s = s + "-" + att.getSnippet();
+
         viewHolder.aCity.setText(s);
 
         return view;

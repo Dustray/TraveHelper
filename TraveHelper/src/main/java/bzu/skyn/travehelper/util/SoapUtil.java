@@ -125,7 +125,7 @@ public class SoapUtil {
         return result;
     }
 
-    public static WeatherJsonEntity getWeatherByCity(String theCityName) {
+    public static List<WeatherJsonEntity> getWeatherByCity(String theCityName) {
 /*
 {
     "results":
@@ -164,13 +164,15 @@ public class SoapUtil {
 */
         WeatherSignUrl wsu = new WeatherSignUrl();
         try {
-            String url = wsu.generateGetDiaryWeatherURL(theCityName,"zh-Hans","c","1","1");
+            String url = wsu.generateGetDiaryWeatherURL(theCityName,"zh-Hans","c","0","3");
 
             JSONObject json = RequestUrl(url);
-            WeatherJsonEntity weather = new WeatherJsonEntity();
-            weather =  jsonWeather(weather,json);
+            List<WeatherJsonEntity> listWeather ;
+            listWeather =  jsonWeather(json);
             JSONObject json2 = RequestUrl("https://api.seniverse.com/v3/life/suggestion.json?key=7nk4iowy524iry3l&location=shanghai&language=zh-Hans");
-            return jsonLife(weather,json2);
+
+            listWeather.set(0, jsonLife(listWeather.get(0),json2));
+            return listWeather;
 
         }catch (SignatureException e) {
             e.printStackTrace();
@@ -182,9 +184,11 @@ public class SoapUtil {
         return null;
     }
 
-    private static WeatherJsonEntity jsonWeather(WeatherJsonEntity weather,JSONObject json){
-        String jsonString = json.toString();
+    private static List<WeatherJsonEntity> jsonWeather(JSONObject json){
 
+        Log.i("logme","StringWeather测试***:"+json);
+        String jsonString = json.toString();
+        List<WeatherJsonEntity> listWeather = new ArrayList<WeatherJsonEntity>();
         JsonParser parser = new JsonParser();// json 解析器
         JsonObject obj = (JsonObject) parser.parse(jsonString); /* 获取返回状态码 */
         //String resultcode = obj.get("results").getAsString(); /* 如果状态码是200说明返回数据成功*/
@@ -196,24 +200,35 @@ public class SoapUtil {
             JsonObject itemLocation = jLocation.get("location").getAsJsonObject();
             JsonObject jDaily = futureWeatherArray.get(0).getAsJsonObject();
             JsonArray jaDaily= jDaily.get("daily").getAsJsonArray();
-            JsonObject jWeather = jaDaily.get(0).getAsJsonObject();
-            //Log.i("logme","nothiii:"+jDaily.get("daily").getAsJsonObject());
-            weather.setCity(itemLocation.get("name").getAsString());
-            weather.setCityCountry(itemLocation.get("path").getAsString());
-            weather.setDate(jWeather.get("date").getAsString());
-            weather.setWeatherDay(jWeather.get("text_day").getAsString());
-            weather.setWeatherNight(jWeather.get("text_night").getAsString());
-            weather.setHighTem(jWeather.get("high").getAsString());
-            weather.setLowTem(jWeather.get("low").getAsString());
-            weather.setWindDirection(jWeather.get("wind_direction").getAsString());
-            weather.setWindSpeed(jWeather.get("wind_speed").getAsString());
 
+
+            for(int i = 0;i<3;i++){
+
+                WeatherJsonEntity weather = new WeatherJsonEntity();
+
+                JsonObject jWeather = jaDaily.get(i).getAsJsonObject();
+                //Log.i("logme","nothiii:"+jDaily.get("daily").getAsJsonObject());
+                weather.setCity(itemLocation.get("name").getAsString());
+                weather.setCityCountry(itemLocation.get("path").getAsString());
+                weather.setDate(jWeather.get("date").getAsString());
+                weather.setWeatherDay(jWeather.get("text_day").getAsString());
+                weather.setCodeDay(jWeather.get("code_day").getAsString());
+                weather.setWeatherNight(jWeather.get("text_night").getAsString());
+                weather.setHighTem(jWeather.get("high").getAsString());
+                weather.setLowTem(jWeather.get("low").getAsString());
+                weather.setWindDirection(jWeather.get("wind_direction").getAsString());
+                weather.setWindSpeed(jWeather.get("wind_speed").getAsString());
+                weather.setPrecip(jWeather.get("precip").getAsString());
+
+                listWeather.add(weather);
+            }
            // Log.i("logme","JsonCity:"+jWeather.get("text_day").getAsString());
         }
-        return weather;
+        return listWeather;
     }
 
     private static WeatherJsonEntity jsonLife(WeatherJsonEntity weather,JSONObject json) {
+        if(json==null)return null;
         String jsonString = json.toString();
 
         JsonParser parser = new JsonParser();// json 解析器
