@@ -31,30 +31,96 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fab1c570-c7fe-40e5-a10c-45ef2f4e0b37" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/support_annotations_22_0_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/support_v4_22_0_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TraveHelper/src/main/assets/litepal.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TraveHelper/src/main/java/bzu/skyn/travehelper/tools/ListDataSave.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/support_v4_18_0_0.xml" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TraveHelper/src/main/res/drawable-hdpi/bg03.png" afterPath="$PROJECT_DIR$/TraveHelper/src/main/res/drawable-hdpi/bg03.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TraveHelper/src/main/res/drawable-hdpi/bgwel.png" afterPath="$PROJECT_DIR$/TraveHelper/src/main/res/drawable-hdpi/bgwel.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TraveHelper/src/main/res/drawable-hdpi/home_btn_bg_d.png" afterPath="$PROJECT_DIR$/TraveHelper/src/main/res/drawable-hdpi/home_btn_bg_d.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TraveHelper/src/main/res/drawable-hdpi/home_btn_bg_s.png" afterPath="$PROJECT_DIR$/TraveHelper/src/main/res/drawable-hdpi/home_btn_bg_s.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TraveHelper/src/main/res/drawable-hdpi/maintab_toolbar_bg.png" afterPath="$PROJECT_DIR$/TraveHelper/src/main/res/drawable-hdpi/maintab_toolbar_bg.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TraveHelper/src/main/jniLibs/arm64-v8a/libGNaviData.so" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TraveHelper/src/main/jniLibs/arm64-v8a/libGNaviGuide.so" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TraveHelper/src/main/jniLibs/arm64-v8a/libGNaviMap.so" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TraveHelper/src/main/jniLibs/arm64-v8a/libGNaviMapex.so" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TraveHelper/src/main/jniLibs/arm64-v8a/libGNaviRoute.so" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TraveHelper/src/main/jniLibs/arm64-v8a/libGNaviSearch.so" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TraveHelper/src/main/jniLibs/arm64-v8a/libGNaviUtils.so" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TraveHelper/src/main/jniLibs/arm64-v8a/libRoadLineRebuildAPI.so" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TraveHelper/src/main/jniLibs/arm64-v8a/librtbt800.so" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TraveHelper/src/main/jniLibs/arm64-v8a/libwtbt800.so" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TraveHelper/src/main/jniLibs/armeabi-v7a/libGNaviData.so" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TraveHelper/src/main/jniLibs/armeabi-v7a/libGNaviGuide.so" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TraveHelper/src/main/jniLibs/armeabi-v7a/libGNaviMap.so" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TraveHelper/src/main/jniLibs/armeabi-v7a/libGNaviMapex.so" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TraveHelper/src/main/jniLibs/armeabi-v7a/libGNaviPos.so" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TraveHelper/src/main/jniLibs/armeabi-v7a/libGNaviRoute.so" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TraveHelper/src/main/jniLibs/armeabi-v7a/libGNaviSearch.so" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TraveHelper/src/main/jniLibs/armeabi-v7a/libGNaviUtils.so" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TraveHelper/src/main/jniLibs/armeabi-v7a/libRoadLineRebuildAPI.so" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TraveHelper/src/main/jniLibs/armeabi-v7a/librtbt800.so" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TraveHelper/src/main/jniLibs/armeabi-v7a/libwtbt800.so" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TraveHelper/src/main/jniLibs/armeabi/libGNaviData.so" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TraveHelper/src/main/jniLibs/armeabi/libGNaviGuide.so" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TraveHelper/src/main/jniLibs/armeabi/libGNaviMap.so" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TraveHelper/src/main/jniLibs/armeabi/libGNaviMapex.so" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TraveHelper/src/main/jniLibs/armeabi/libGNaviPos.so" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TraveHelper/src/main/jniLibs/armeabi/libGNaviRoute.so" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TraveHelper/src/main/jniLibs/armeabi/libGNaviSearch.so" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TraveHelper/src/main/jniLibs/armeabi/libGNaviUtils.so" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TraveHelper/src/main/jniLibs/armeabi/libRoadLineRebuildAPI.so" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TraveHelper/src/main/jniLibs/armeabi/librtbt800.so" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TraveHelper/src/main/jniLibs/armeabi/libwtbt800.so" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TraveHelper/src/main/jniLibs/x86/libGNaviData.so" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TraveHelper/src/main/jniLibs/x86/libGNaviGuide.so" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TraveHelper/src/main/jniLibs/x86/libGNaviMap.so" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TraveHelper/src/main/jniLibs/x86/libGNaviMapex.so" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TraveHelper/src/main/jniLibs/x86/libGNaviPos.so" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TraveHelper/src/main/jniLibs/x86/libGNaviRoute.so" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TraveHelper/src/main/jniLibs/x86/libGNaviSearch.so" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TraveHelper/src/main/jniLibs/x86/libGNaviUtils.so" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TraveHelper/src/main/jniLibs/x86/libRoadLineRebuildAPI.so" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TraveHelper/src/main/jniLibs/x86/librtbt800.so" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TraveHelper/src/main/jniLibs/x86/libwtbt800.so" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TraveHelper/src/main/jniLibs/x86_64/libGNaviData.so" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TraveHelper/src/main/jniLibs/x86_64/libGNaviGuide.so" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TraveHelper/src/main/jniLibs/x86_64/libGNaviMap.so" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TraveHelper/src/main/jniLibs/x86_64/libGNaviMapex.so" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TraveHelper/src/main/jniLibs/x86_64/libGNaviPos.so" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TraveHelper/src/main/jniLibs/x86_64/libGNaviRoute.so" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TraveHelper/src/main/jniLibs/x86_64/libGNaviSearch.so" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TraveHelper/src/main/jniLibs/x86_64/libGNaviUtils.so" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TraveHelper/src/main/jniLibs/x86_64/libRoadLineRebuildAPI.so" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TraveHelper/src/main/jniLibs/x86_64/librtbt800.so" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TraveHelper/src/main/jniLibs/x86_64/libwtbt800.so" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TraveHelper/src/main/res/drawable-hdpi/ic_back.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TraveHelper/src/main/res/drawable-mdpi/ic_back.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TraveHelper/src/main/res/drawable-xhdpi/ic_back.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TraveHelper/src/main/res/drawable-xxhdpi/ic_back.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/animated_vector_drawable_25_3_1.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/appcompat_v7_25_3_1.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/constraint_layout_1_0_0_beta4.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/constraint_layout_solver_1_0_0_beta4.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/support_compat_25_3_1.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/support_core_ui_25_3_1.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/support_core_utils_25_3_1.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/support_fragment_25_3_1.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/support_media_compat_25_3_1.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/support_v4_25_3_1.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/support_vector_drawable_25_3_1.xml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/AMap2DMap_5_2_0_AMapSearch_5_3_1_AMapLocation_3_6_1_20171012.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/android_android_10.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/support_annotations_22_0_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/support_v4_22_0_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TraveHelper/libs/AMap2DMap_5.2.0_AMapSearch_5.3.1_AMapLocation_3.6.1_20171012.jar" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TraveHelper/build.gradle" afterPath="$PROJECT_DIR$/TraveHelper/build.gradle" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TraveHelper/src/main/AndroidManifest.xml" afterPath="$PROJECT_DIR$/TraveHelper/src/main/AndroidManifest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TraveHelper/src/main/java/bzu/skyn/travehelper/MainActivity.java" afterPath="$PROJECT_DIR$/TraveHelper/src/main/java/bzu/skyn/travehelper/MainActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TraveHelper/src/main/java/bzu/skyn/travehelper/AMapActivity.java" afterPath="$PROJECT_DIR$/TraveHelper/src/main/java/bzu/skyn/travehelper/AMapActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TraveHelper/src/main/java/bzu/skyn/travehelper/SearchActivity.java" afterPath="$PROJECT_DIR$/TraveHelper/src/main/java/bzu/skyn/travehelper/SearchActivity.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TraveHelper/src/main/java/bzu/skyn/travehelper/WeatherActivity.java" afterPath="$PROJECT_DIR$/TraveHelper/src/main/java/bzu/skyn/travehelper/WeatherActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TraveHelper/src/main/java/bzu/skyn/travehelper/entity/WeatherJsonEntity.java" afterPath="$PROJECT_DIR$/TraveHelper/src/main/java/bzu/skyn/travehelper/entity/WeatherJsonEntity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TraveHelper/src/main/java/bzu/skyn/travehelper/tools/ImageTool.java" afterPath="$PROJECT_DIR$/TraveHelper/src/main/java/bzu/skyn/travehelper/tools/ImageTool.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TraveHelper/src/main/java/bzu/skyn/travehelper/tools/JsonTools.java" afterPath="$PROJECT_DIR$/TraveHelper/src/main/java/bzu/skyn/travehelper/tools/JsonTools.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TraveHelper/src/main/java/bzu/skyn/travehelper/util/GaodeSearchPoiAdapter.java" afterPath="$PROJECT_DIR$/TraveHelper/src/main/java/bzu/skyn/travehelper/util/GaodeSearchPoiAdapter.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TraveHelper/src/main/java/bzu/skyn/travehelper/util/SoapUtil.java" afterPath="$PROJECT_DIR$/TraveHelper/src/main/java/bzu/skyn/travehelper/util/SoapUtil.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TraveHelper/src/main/res/layout/activity_main.xml" afterPath="$PROJECT_DIR$/TraveHelper/src/main/res/layout/activity_main.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TraveHelper/src/main/res/layout/content_layout.xml" afterPath="$PROJECT_DIR$/TraveHelper/src/main/res/layout/content_layout.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TraveHelper/src/main/java/bzu/skyn/travehelper/util/AttractionAdapter.java" afterPath="$PROJECT_DIR$/TraveHelper/src/main/java/bzu/skyn/travehelper/util/AttractionAdapter.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TraveHelper/src/main/res/drawable/btn_default_small.xml" afterPath="$PROJECT_DIR$/TraveHelper/src/main/res/drawable/btn_default_small.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TraveHelper/src/main/res/layout/activity_map.xml" afterPath="$PROJECT_DIR$/TraveHelper/src/main/res/layout/activity_map.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TraveHelper/src/main/res/layout/item_attractions.xml" afterPath="$PROJECT_DIR$/TraveHelper/src/main/res/layout/item_attractions.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TraveHelper/src/main/res/layout/item_search_location.xml" afterPath="$PROJECT_DIR$/TraveHelper/src/main/res/layout/item_search_location.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TraveHelper/src/main/res/layout/list_head_search.xml" afterPath="$PROJECT_DIR$/TraveHelper/src/main/res/layout/list_head_search.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TraveHelper/src/main/res/layout/tool.xml" afterPath="$PROJECT_DIR$/TraveHelper/src/main/res/layout/tool.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TraveHelper/src/main/res/values/strings.xml" afterPath="$PROJECT_DIR$/TraveHelper/src/main/res/values/strings.xml" />
     </list>
     <ignored path="TraveHelper.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -87,40 +153,53 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="WeatherActivity.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/TraveHelper/src/main/java/bzu/skyn/travehelper/WeatherActivity.java">
+      <file leaf-file-name="item_attractions.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/TraveHelper/src/main/res/layout/item_attractions.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190">
-              <caret line="138" column="38" selection-start-line="138" selection-start-column="38" selection-end-line="138" selection-end-column="39" />
+            <state relative-caret-position="191">
+              <caret line="31" column="27" selection-start-line="31" selection-start-column="27" selection-end-line="31" selection-end-column="27" />
+              <folding />
+            </state>
+          </provider>
+          <provider editor-type-id="android-designer2">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="JsonTools.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/TraveHelper/src/main/java/bzu/skyn/travehelper/tools/JsonTools.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="239">
+              <caret line="37" column="12" selection-start-line="37" selection-start-column="12" selection-end-line="37" selection-end-column="12" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SearchActivity.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/TraveHelper/src/main/java/bzu/skyn/travehelper/SearchActivity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="346">
+              <caret line="141" column="37" selection-start-line="141" selection-start-column="37" selection-end-line="141" selection-end-column="37" />
               <folding>
-                <element signature="e#2648#2666#0" expanded="true" />
-                <element signature="e#5428#5446#0" expanded="true" />
-                <element signature="e#5869#6781#0" expanded="true" />
-                <element signature="e#6389#6739#0" expanded="true" />
-                <element signature="e#6738#6739#0" expanded="true" />
-                <element signature="e#6780#6781#0" expanded="true" />
-                <element signature="e#6984#7358#0" expanded="true" />
-                <element signature="e#7357#7358#0" expanded="true" />
-                <element signature="e#7405#9084#0" expanded="true" />
-                <element signature="e#8284#9066#0" expanded="true" />
-                <element signature="e#9065#9066#0" expanded="true" />
-                <element signature="e#9083#9084#0" expanded="true" />
-                <element signature="method#showTast#0;class#WeatherActivity#0" expanded="false" />
-                <element signature="e#9363#11843#0" expanded="true" />
-                <element signature="e#11842#11843#0" expanded="true" />
-                <element signature="e#12283#12310#0" expanded="false" />
-                <element signature="e#17008#17683#0" expanded="true" />
-                <element signature="e#17682#17683#0" expanded="true" />
+                <element signature="e#4360#5205#0" expanded="true" />
+                <element signature="e#5204#5205#0" expanded="true" />
+                <element signature="e#5271#5458#0" expanded="true" />
+                <element signature="e#5457#5458#0" expanded="true" />
+                <element signature="e#7276#7638#0" expanded="true" />
+                <element signature="e#7637#7638#0" expanded="true" />
+                <element signature="e#7660#7944#0" expanded="true" />
+                <element signature="e#7943#7944#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="litepal.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/TraveHelper/src/main/assets/litepal.xml">
+      <file leaf-file-name="AttractionAdapter.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/TraveHelper/src/main/java/bzu/skyn/travehelper/util/AttractionAdapter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="54">
-              <caret line="21" column="21" selection-start-line="21" selection-start-column="21" selection-end-line="21" selection-end-column="21" />
+            <state relative-caret-position="277">
+              <caret line="60" column="53" selection-start-line="60" selection-start-column="53" selection-end-line="60" selection-end-column="53" />
               <folding />
             </state>
           </provider>
@@ -138,6 +217,7 @@
   <component name="GenerateSignedApkSettings">
     <option name="KEY_STORE_PATH" value="C:\Users\Dustray\AndroidStudioProjects\keyfile\TraveHelperSignedKey.jks" />
     <option name="KEY_ALIAS" value="travehelper" />
+    <option name="REMEMBER_PASSWORDS" value="true" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -232,6 +312,11 @@
                 <option name="name" value="mockableAndroidJar" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
+                <option name="description" value="Prepare com.android.support:appcompat-v7:25.3.1" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="prepareComAndroidSupportAppcompatV72531Library" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
                 <option name="description" value="Displays the tasks runnable from root project 'TraveHelper' (some of the displayed tasks may belong to subprojects)." />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
                 <option name="name" value="tasks" />
@@ -248,6 +333,16 @@
               <ExternalTaskPojo>
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
                 <option name="name" value="incrementalDebugJavaCompilationSafeguard" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Prepare com.android.support:support-media-compat:25.3.1" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="prepareComAndroidSupportSupportMediaCompat2531Library" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Prepare com.android.support:support-vector-drawable:25.3.1" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="prepareComAndroidSupportSupportVectorDrawable2531Library" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Runs all device checks using Device Providers and Test Servers." />
@@ -340,6 +435,16 @@
               <ExternalTaskPojo>
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
                 <option name="name" value="compileDebugUnitTestJavaWithJavac" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Prepare com.android.support:support-core-utils:25.3.1" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="prepareComAndroidSupportSupportCoreUtils2531Library" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Prepare com.android.support:support-v4:25.3.1" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="prepareComAndroidSupportSupportV42531Library" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
@@ -485,6 +590,11 @@
                 <option name="name" value="javaPreCompileReleaseUnitTest" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
+                <option name="description" value="Prepare com.android.support:support-core-ui:25.3.1" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="prepareComAndroidSupportSupportCoreUi2531Library" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
                 <option name="name" value="javaPreCompileRelease" />
               </ExternalTaskPojo>
@@ -540,11 +650,6 @@
               <ExternalTaskPojo>
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
                 <option name="name" value="preDebugUnitTestBuild" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Prepare com.android.support:support-v4:22.0.0" />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="prepareComAndroidSupportSupportV42200Library" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
@@ -641,6 +746,11 @@
                 <option name="name" value="preReleaseUnitTestBuild" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
+                <option name="description" value="Prepare com.android.support:support-fragment:25.3.1" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="prepareComAndroidSupportSupportFragment2531Library" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
                 <option name="name" value="generateDebugResValues" />
               </ExternalTaskPojo>
@@ -652,6 +762,11 @@
               <ExternalTaskPojo>
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
                 <option name="name" value="javaPreCompileDebug" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Prepare com.android.support:support-compat:25.3.1" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="prepareComAndroidSupportSupportCompat2531Library" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Run unit tests for the debug build." />
@@ -670,6 +785,11 @@
               <ExternalTaskPojo>
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
                 <option name="name" value="transformClassesWithDexForRelease" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Prepare com.android.support:animated-vector-drawable:25.3.1" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="prepareComAndroidSupportAnimatedVectorDrawable2531Library" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Installs the Debug build." />
@@ -713,6 +833,11 @@
                 <option name="description" value="Assembles and tests this project and all projects that depend on it." />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
                 <option name="name" value="buildDependents" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Prepare com.android.support.constraint:constraint-layout:1.0.0-beta4" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="prepareComAndroidSupportConstraintConstraintLayout100Beta4Library" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
@@ -897,6 +1022,11 @@
                 <option name="name" value="model" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
+                <option name="description" value="Prepare com.android.support:appcompat-v7:25.3.1" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/TraveHelper" />
+                <option name="name" value="prepareComAndroidSupportAppcompatV72531Library" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
                 <option name="description" value="Displays the tasks runnable from project ':TraveHelper'." />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/TraveHelper" />
                 <option name="name" value="tasks" />
@@ -908,6 +1038,16 @@
               <ExternalTaskPojo>
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/TraveHelper" />
                 <option name="name" value="incrementalDebugJavaCompilationSafeguard" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Prepare com.android.support:support-media-compat:25.3.1" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/TraveHelper" />
+                <option name="name" value="prepareComAndroidSupportSupportMediaCompat2531Library" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Prepare com.android.support:support-vector-drawable:25.3.1" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/TraveHelper" />
+                <option name="name" value="prepareComAndroidSupportSupportVectorDrawable2531Library" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Runs all device checks using Device Providers and Test Servers." />
@@ -1000,6 +1140,16 @@
               <ExternalTaskPojo>
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/TraveHelper" />
                 <option name="name" value="compileDebugUnitTestJavaWithJavac" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Prepare com.android.support:support-core-utils:25.3.1" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/TraveHelper" />
+                <option name="name" value="prepareComAndroidSupportSupportCoreUtils2531Library" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Prepare com.android.support:support-v4:25.3.1" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/TraveHelper" />
+                <option name="name" value="prepareComAndroidSupportSupportV42531Library" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/TraveHelper" />
@@ -1145,6 +1295,11 @@
                 <option name="name" value="javaPreCompileReleaseUnitTest" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
+                <option name="description" value="Prepare com.android.support:support-core-ui:25.3.1" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/TraveHelper" />
+                <option name="name" value="prepareComAndroidSupportSupportCoreUi2531Library" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/TraveHelper" />
                 <option name="name" value="javaPreCompileRelease" />
               </ExternalTaskPojo>
@@ -1195,11 +1350,6 @@
               <ExternalTaskPojo>
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/TraveHelper" />
                 <option name="name" value="preDebugUnitTestBuild" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Prepare com.android.support:support-v4:22.0.0" />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/TraveHelper" />
-                <option name="name" value="prepareComAndroidSupportSupportV42200Library" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/TraveHelper" />
@@ -1296,6 +1446,11 @@
                 <option name="name" value="preReleaseUnitTestBuild" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
+                <option name="description" value="Prepare com.android.support:support-fragment:25.3.1" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/TraveHelper" />
+                <option name="name" value="prepareComAndroidSupportSupportFragment2531Library" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/TraveHelper" />
                 <option name="name" value="generateDebugResValues" />
               </ExternalTaskPojo>
@@ -1307,6 +1462,11 @@
               <ExternalTaskPojo>
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/TraveHelper" />
                 <option name="name" value="javaPreCompileDebug" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Prepare com.android.support:support-compat:25.3.1" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/TraveHelper" />
+                <option name="name" value="prepareComAndroidSupportSupportCompat2531Library" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Run unit tests for the debug build." />
@@ -1325,6 +1485,11 @@
               <ExternalTaskPojo>
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/TraveHelper" />
                 <option name="name" value="transformClassesWithDexForRelease" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Prepare com.android.support:animated-vector-drawable:25.3.1" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/TraveHelper" />
+                <option name="name" value="prepareComAndroidSupportAnimatedVectorDrawable2531Library" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Installs the Debug build." />
@@ -1368,6 +1533,11 @@
                 <option name="description" value="Assembles and tests this project and all projects that depend on it." />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/TraveHelper" />
                 <option name="name" value="buildDependents" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Prepare com.android.support.constraint:constraint-layout:1.0.0-beta4" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/TraveHelper" />
+                <option name="name" value="prepareComAndroidSupportConstraintConstraintLayout100Beta4Library" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/TraveHelper" />
@@ -1503,7 +1673,7 @@
     </option>
     <option name="modificationStamps">
       <map>
-        <entry key="C:\Users\Dustray\AndroidStudioProjects\TraveHelper" value="4528798450243" />
+        <entry key="C:\Users\Dustray\AndroidStudioProjects\TraveHelper" value="4529197729912" />
       </map>
     </option>
     <option name="projectBuildClasspath">
@@ -1807,11 +1977,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/TraveHelper/src/main/java/bzu/skyn/travehelper/TuijianActivity.java" />
-        <option value="$PROJECT_DIR$/TraveHelper/src/main/java/bzu/skyn/travehelper/OperationActivity.java" />
-        <option value="$PROJECT_DIR$/TraveHelper/src/main/java/bzu/skyn/travehelper/ShowActivity.java" />
-        <option value="$PROJECT_DIR$/TraveHelper/src/main/java/bzu/skyn/travehelper/WelcomeActivity.java" />
-        <option value="$PROJECT_DIR$/TraveHelper/src/main/java/bzu/skyn/travehelper/WriterActivity.java" />
         <option value="$PROJECT_DIR$/TraveHelper/src/main/java/bzu/skyn/travehelper/calendar/CalendarGridView.java" />
         <option value="$PROJECT_DIR$/TraveHelper/src/main/res/values/strings.xml" />
         <option value="$PROJECT_DIR$/TraveHelper/src/main/java/bzu/skyn/travehelper/diary/DBOpenHelper.java" />
@@ -1825,10 +1990,6 @@
         <option value="$PROJECT_DIR$/TraveHelper/src/main/res/drawable/position.svg" />
         <option value="$PROJECT_DIR$/TraveHelper/src/main/java/bzu/skyn/travehelper/entity/AttractionEntity.java" />
         <option value="$PROJECT_DIR$/TraveHelper/src/main/java/bzu/skyn/travehelper/tools/Scence.java" />
-        <option value="$PROJECT_DIR$/TraveHelper/src/main/res/layout/list_head_search.xml" />
-        <option value="$PROJECT_DIR$/TraveHelper/src/main/res/layout/item_attractions.xml" />
-        <option value="$PROJECT_DIR$/TraveHelper/src/main/java/bzu/skyn/travehelper/util/AttractionAdapter.java" />
-        <option value="$PROJECT_DIR$/TraveHelper/src/main/java/bzu/skyn/travehelper/SearchActivity.java" />
         <option value="$PROJECT_DIR$/TraveHelper/src/main/res/values/radius_white_frame.xml" />
         <option value="$PROJECT_DIR$/TraveHelper/src/main/java/bzu/skyn/travehelper/tools/FastToast.java" />
         <option value="$PROJECT_DIR$/TraveHelper/src/main/res/values/colors.xml" />
@@ -1838,10 +1999,7 @@
         <option value="$PROJECT_DIR$/TraveHelper/src/main/java/bzu/skyn/travehelper/util/GaodeSearchAdapter.java" />
         <option value="$PROJECT_DIR$/TraveHelper/src/main/java/bzu/skyn/travehelper/tools/GaodeSearchAdapter.java" />
         <option value="$PROJECT_DIR$/TraveHelper/src/main/java/bzu/skyn/travehelper/tools/GaodeSearchPoiAdapter.java" />
-        <option value="$PROJECT_DIR$/TraveHelper/src/main/res/layout/activity_map.xml" />
-        <option value="$PROJECT_DIR$/TraveHelper/src/main/java/bzu/skyn/travehelper/AMapActivity.java" />
         <option value="$PROJECT_DIR$/TraveHelper/src/main/java/bzu/skyn/travehelper/util/GaodeSearchPoiAdapter.java" />
-        <option value="$PROJECT_DIR$/TraveHelper/src/main/res/layout/item_search_location.xml" />
         <option value="$PROJECT_DIR$/TraveHelper/src/main/java/bzu/skyn/travehelper/MainActivity.java" />
         <option value="$PROJECT_DIR$/TraveHelper/src/main/res/layout/activity_main.xml" />
         <option value="$PROJECT_DIR$/TraveHelper/src/main/java/bzu/skyn/travehelper/tools/ImageTool.java" />
@@ -1849,15 +2007,27 @@
         <option value="$PROJECT_DIR$/TraveHelper/src/main/res/layout/content_layout.xml" />
         <option value="$PROJECT_DIR$/TraveHelper/src/main/java/bzu/skyn/travehelper/util/SoapUtil.java" />
         <option value="$PROJECT_DIR$/TraveHelper/src/main/java/bzu/skyn/travehelper/tools/ListDataSave.java" />
-        <option value="$PROJECT_DIR$/TraveHelper/build.gradle" />
         <option value="$PROJECT_DIR$/TraveHelper/src/main/java/bzu/skyn/travehelper/entity/ProvinceListEntity.java" />
         <option value="$PROJECT_DIR$/TraveHelper/src/main/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/TraveHelper/src/main/res/values/litepal.xml" />
         <option value="$PROJECT_DIR$/TraveHelper/src/main/assets/litepal.xml" />
         <option value="$PROJECT_DIR$/TraveHelper/src/main/java/bzu/skyn/travehelper/entity/CityEntity.java" />
         <option value="$PROJECT_DIR$/TraveHelper/src/main/java/bzu/skyn/travehelper/entity/ProvinceEntity.java" />
-        <option value="$PROJECT_DIR$/TraveHelper/src/main/java/bzu/skyn/travehelper/tools/JsonTools.java" />
         <option value="$PROJECT_DIR$/TraveHelper/src/main/java/bzu/skyn/travehelper/WeatherActivity.java" />
+        <option value="$PROJECT_DIR$/TraveHelper/src/main/res/layout/tool.xml" />
+        <option value="$PROJECT_DIR$/TraveHelper/build.gradle" />
+        <option value="$PROJECT_DIR$/TraveHelper/src/main/res/drawable/btn_default_small.xml" />
+        <option value="$PROJECT_DIR$/TraveHelper/src/main/res/layout/activity_navi.xml" />
+        <option value="$PROJECT_DIR$/TraveHelper/src/main/java/bzu/skyn/travehelper/BaseActivity.java" />
+        <option value="$PROJECT_DIR$/TraveHelper/src/main/res/layout/item_search_location.xml" />
+        <option value="$PROJECT_DIR$/TraveHelper/src/main/java/bzu/skyn/travehelper/NaviActivity.java" />
+        <option value="$PROJECT_DIR$/TraveHelper/src/main/res/layout/activity_map.xml" />
+        <option value="$PROJECT_DIR$/TraveHelper/src/main/java/bzu/skyn/travehelper/AMapActivity.java" />
+        <option value="$PROJECT_DIR$/TraveHelper/src/main/res/layout/list_head_search.xml" />
+        <option value="$PROJECT_DIR$/TraveHelper/src/main/java/bzu/skyn/travehelper/util/AttractionAdapter.java" />
+        <option value="$PROJECT_DIR$/TraveHelper/src/main/res/layout/item_attractions.xml" />
+        <option value="$PROJECT_DIR$/TraveHelper/src/main/java/bzu/skyn/travehelper/SearchActivity.java" />
+        <option value="$PROJECT_DIR$/TraveHelper/src/main/java/bzu/skyn/travehelper/tools/JsonTools.java" />
       </list>
     </option>
   </component>
@@ -1892,10 +2062,11 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane />
       </pane>
+      <pane id="PackagesPane" />
       <pane id="AndroidView">
         <subPane>
           <PATH>
@@ -1942,7 +2113,7 @@
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="values" />
+              <option name="myItemId" value="layout" />
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderTypeNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1956,76 +2127,17 @@
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="assets" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidSourceTypeNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TraveHelper" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TraveHelper-TraveHelper" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="java" />
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidSourceTypeNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="travehelper" />
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TraveHelper" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TraveHelper-TraveHelper" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidSourceTypeNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="travehelper" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tools" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TraveHelper" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TraveHelper-TraveHelper" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidSourceTypeNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="travehelper" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="entity" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -2035,21 +2147,29 @@
     <property name="android.project.structure.proportion" value="0.15" />
     <property name="settings.editor.selected.configurable" value="instant.run" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../keyfile/SimpleBrowserSignedKey.jks" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/TraveHelper/libs/AMap3DMap_5.5.0_AMapNavi_5.4.0_AMapSearch_5.5.0_AMapLocation_3.6.1_20171107.jar" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/TraveHelper/src/main/res/drawable" />
     <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file://C:/Users/Dustray/AndroidStudioProjects/TraveHelper/TraveHelper/src/main/java/bzu/skyn/travehelper/util/SoapUtil.java" />
+    <property name="ExportApk.ApkPath" value="C:\Users\Dustray\AndroidStudioProjects\TraveHelper\TraveHelper" />
+    <property name="ExportApk.Flavors" value="" />
+    <property name="ExportApk.BuildType" value="release" />
+    <property name="ExportApk.SignV1" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Dustray\AndroidStudioProjects\TraveHelper\TraveHelper\libs" />
       <recent name="C:\Users\Dustray\AndroidStudioProjects\TraveHelper\TraveHelper\src\main\assets" />
       <recent name="C:\Users\Dustray\AndroidStudioProjects\TraveHelper\TraveHelper\src\main\res\drawable-mdpi" />
     </key>
+    <key name="android.template.packageName">
+      <recent name="bzu.skyn.travehelper" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Dustray\AndroidStudioProjects\TraveHelper\TraveHelper\src\main\java\bzu\skyn\travehelper" />
+      <recent name="C:\Users\Dustray\AndroidStudioProjects\TraveHelper\TraveHelper\libs" />
+      <recent name="C:\Users\Dustray\AndroidStudioProjects\TraveHelper\TraveHelper\src\main\jniLibs" />
       <recent name="C:\Users\Dustray\AndroidStudioProjects\TraveHelper\TraveHelper\src\main\java\bzu\skyn\travehelper\tools" />
       <recent name="C:\Users\Dustray\AndroidStudioProjects\TraveHelper\TraveHelper\src\main\java\bzu\skyn\travehelper\util" />
-      <recent name="C:\Users\Dustray\AndroidStudioProjects\TraveHelper\TraveHelper\src\main\res\layout" />
-      <recent name="C:\Users\Dustray\AndroidStudioProjects\TraveHelper\TraveHelper\src\main\res\drawable-mdpi" />
-      <recent name="C:\Users\Dustray\AndroidStudioProjects\TraveHelper\TraveHelper\src\main\res\drawable" />
     </key>
   </component>
   <component name="RunManager" selected="Android App.TraveHelper-TraveHelper">
@@ -2375,6 +2495,14 @@
       <option name="presentableId" value="Default" />
       <updated>1508768066729</updated>
     </task>
+    <task id="LOCAL-00001" summary="171121城市列表下载保存成功">
+      <created>1511268495779</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1511268495779</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TodoView">
@@ -2387,7 +2515,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-9" y="-9" width="1938" height="1098" extended-state="6" />
+    <frame x="-9" y="-9" width="1938" height="1098" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32962137" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -2432,136 +2560,27 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="171121城市列表下载保存成功" />
+    <option name="LAST_COMMIT_MESSAGE" value="171121城市列表下载保存成功" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="5" />
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/TraveHelper/src/main/java/bzu/skyn/travehelper/AMapActivity.java</url>
+          <line>415</line>
+          <properties />
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="9" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/TraveHelper/src/main/java/bzu/skyn/travehelper/search/SceneryScrollView.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="185">
-          <caret line="25" column="34" selection-start-line="25" selection-start-column="16" selection-end-line="25" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-74">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/TraveHelper/libs/MapApi.jar!/com/amap/mapapi/map/MapActivity.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="222">
-          <caret line="27" column="22" selection-start-line="27" selection-start-column="22" selection-end-line="27" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TraveHelper/src/main/java/bzu/skyn/travehelper/CalendarActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="43" column="4" selection-start-line="43" selection-start-column="4" selection-end-line="43" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/TraveHelper/libs/AMap2DMap_5.2.0_AMapSearch_5.3.1_AMapLocation_3.6.1_20171012.jar!/com/amap/api/maps2d/model/MyLocationStyle.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="183">
-          <caret line="35" column="27" selection-start-line="35" selection-start-column="27" selection-end-line="35" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/AppData/Local/Android/sdk/platforms/android-10/android.jar!/android/graphics/Bitmap.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-4257">
-          <caret line="21" column="4" selection-start-line="21" selection-start-column="4" selection-end-line="21" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/TraveHelper/libs/AMap2DMap_5.2.0_AMapSearch_5.3.1_AMapLocation_3.6.1_20171012.jar!/com/amap/api/maps2d/model/BitmapDescriptor.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="37">
-          <caret line="17" column="12" selection-start-line="17" selection-start-column="12" selection-end-line="17" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TraveHelper/src/main/res/drawable-mdpi/radius_white_frame.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="444">
-          <caret line="12" column="25" selection-start-line="12" selection-start-column="25" selection-end-line="12" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TraveHelper/src/main/res/drawable-mdpi/btn_input_white.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="259">
-          <caret line="7" column="40" selection-start-line="7" selection-start-column="40" selection-end-line="7" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TraveHelper/src/main/res/values/colors.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="531">
-          <caret line="28" column="33" selection-start-line="28" selection-start-column="33" selection-end-line="28" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TraveHelper/src/main/java/bzu/skyn/travehelper/util/AttractionAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="592">
-          <caret line="152" column="0" selection-start-line="143" selection-start-column="0" selection-end-line="152" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TraveHelper/src/main/res/layout/activity_search.xml">
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="444">
-          <caret line="12" column="8" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/TraveHelper/libs/AMap2DMap_5.2.0_AMapSearch_5.3.1_AMapLocation_3.6.1_20171012.jar!/com/amap/api/maps2d/model/LatLng.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="20" column="11" selection-start-line="20" selection-start-column="11" selection-end-line="20" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/TraveHelper/libs/AMap2DMap_5.2.0_AMapSearch_5.3.1_AMapLocation_3.6.1_20171012.jar!/com/amap/api/services/core/LatLonPoint.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="287">
-          <caret line="17" column="11" selection-start-line="17" selection-start-column="11" selection-end-line="17" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/TraveHelper/libs/AMap2DMap_5.2.0_AMapSearch_5.3.1_AMapLocation_3.6.1_20171012.jar!/com/amap/api/interfaces/IAMap.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="183">
-          <caret line="47" column="17" selection-start-line="47" selection-start-column="17" selection-end-line="47" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/TraveHelper/libs/AMap2DMap_5.2.0_AMapSearch_5.3.1_AMapLocation_3.6.1_20171012.jar!/com/amap/api/maps2d/AMap.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="183">
-          <caret line="295" column="24" selection-start-line="295" selection-start-column="24" selection-end-line="295" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/TraveHelper/libs/AMap2DMap_5.2.0_AMapSearch_5.3.1_AMapLocation_3.6.1_20171012.jar!/com/amap/api/maps2d/model/CameraPosition.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="22" column="11" selection-start-line="22" selection-start-column="11" selection-end-line="22" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="jar://$PROJECT_DIR$/TraveHelper/libs/AMap2DMap_5.2.0_AMapSearch_5.3.1_AMapLocation_3.6.1_20171012.jar!/com/amap/api/maps2d/AMap.class" />
+    <entry file="jar://$PROJECT_DIR$/TraveHelper/libs/AMap2DMap_5.2.0_AMapSearch_5.3.1_AMapLocation_3.6.1_20171012.jar!/com/amap/api/maps2d/model/CameraPosition.class" />
     <entry file="file://$PROJECT_DIR$/TraveHelper/src/main/java/bzu/skyn/travehelper/util/GaodeSearchAdapter.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="524">
@@ -2569,59 +2588,25 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/TraveHelper/src/main/res/layout/activity_map.xml">
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="223">
-          <caret line="91" column="44" selection-start-line="91" selection-start-column="44" selection-end-line="91" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TraveHelper/src/main/res/layout/item_search_location.xml">
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="370">
-          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TraveHelper/src/main/java/bzu/skyn/travehelper/util/GaodeSearchPoiAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="56" column="0" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/TraveHelper/src/main/res/layout/activity_main.xml">
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="297">
           <caret line="31" column="46" selection-start-line="31" selection-start-column="46" selection-end-line="31" selection-end-column="46" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TraveHelper/src/main/res/layout/activity_weather.xml">
       <provider editor-type-id="android-designer2">
         <state />
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TraveHelper/src/main/res/layout/activity_weather.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="260">
           <caret line="62" column="12" selection-start-line="62" selection-start-column="12" selection-end-line="62" selection-end-column="12" />
           <folding />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TraveHelper/src/main/java/bzu/skyn/travehelper/AMapActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="259">
-          <caret line="218" column="70" selection-start-line="218" selection-start-column="20" selection-end-line="218" selection-end-column="70" />
-        </state>
+      <provider editor-type-id="android-designer2">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/TraveHelper/src/main/java/bzu/skyn/travehelper/tools/ImageTool.java">
@@ -2635,11 +2620,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="546">
           <caret line="24" column="31" selection-start-line="24" selection-start-column="31" selection-end-line="24" selection-end-column="31" />
-          <folding>
-            <element signature="e#576#577#0" expanded="false" />
-            <element signature="e#620#621#0" expanded="false" />
-            <element signature="e#656#657#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2671,16 +2651,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/TraveHelper/src/main/java/bzu/skyn/travehelper/SearchActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2035">
-          <caret line="101" column="4" selection-start-line="101" selection-start-column="4" selection-end-line="101" selection-end-column="49" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$PROJECT_DIR$/TraveHelper/libs/showapi_sdk.jar!/com/show/api/ShowApiRequest.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="287">
@@ -2692,7 +2662,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="183">
           <caret line="71" column="0" selection-start-line="71" selection-start-column="0" selection-end-line="71" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2700,7 +2669,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="673">
           <caret line="547" column="44" selection-start-line="547" selection-start-column="44" selection-end-line="547" selection-end-column="44" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2716,7 +2684,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="112">
           <caret line="103" column="64" selection-start-line="103" selection-start-column="64" selection-end-line="103" selection-end-column="64" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2724,7 +2691,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="107">
           <caret line="60" column="18" selection-start-line="60" selection-start-column="18" selection-end-line="60" selection-end-column="18" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2732,7 +2698,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="368">
           <caret line="47" column="44" selection-start-line="47" selection-start-column="44" selection-end-line="47" selection-end-column="44" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2748,44 +2713,19 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/TraveHelper/src/main/res/layout/content_layout.xml">
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="297">
           <caret line="165" column="54" selection-start-line="165" selection-start-column="45" selection-end-line="165" selection-end-column="54" />
-          <folding>
-            <element signature="e#1019#1305#0" expanded="false" />
-            <element signature="e#3292#8755#0" expanded="false" />
-            <element signature="e#14550#15356#0" expanded="false" />
-          </folding>
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TraveHelper/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="419">
-          <caret line="27" column="36" selection-start-line="27" selection-start-column="36" selection-end-line="27" selection-end-column="36" />
-          <folding />
-        </state>
+      <provider editor-type-id="android-designer2">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/TraveHelper/src/main/java/bzu/skyn/travehelper/entity/ProvinceListEntity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="296">
           <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TraveHelper/src/main/AndroidManifest.xml">
-      <provider editor-type-id="android-manifest">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="185">
-          <caret line="37" column="40" selection-start-line="37" selection-start-column="40" selection-end-line="37" selection-end-column="40" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2793,15 +2733,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="218">
           <caret line="1581" column="31" selection-start-line="1581" selection-start-column="31" selection-end-line="1581" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TraveHelper/src/main/java/bzu/skyn/travehelper/MainActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="181">
-          <caret line="41" column="0" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2817,33 +2748,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
           <caret line="66" column="13" selection-start-line="66" selection-start-column="13" selection-end-line="66" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#445#446#0" expanded="true" />
-            <element signature="e#474#475#0" expanded="true" />
-            <element signature="e#518#519#0" expanded="true" />
-            <element signature="e#554#555#0" expanded="true" />
-            <element signature="e#589#590#0" expanded="true" />
-            <element signature="e#620#621#0" expanded="true" />
-            <element signature="e#668#669#0" expanded="true" />
-            <element signature="e#708#709#0" expanded="true" />
-            <element signature="e#738#739#0" expanded="true" />
-            <element signature="e#764#765#0" expanded="true" />
-            <element signature="e#802#803#0" expanded="true" />
-            <element signature="e#832#833#0" expanded="true" />
-            <element signature="e#864#865#0" expanded="true" />
-            <element signature="e#892#893#0" expanded="true" />
-            <element signature="e#934#935#0" expanded="true" />
-            <element signature="e#968#969#0" expanded="true" />
-            <element signature="e#1000#1001#0" expanded="true" />
-            <element signature="e#1028#1029#0" expanded="true" />
-            <element signature="e#1070#1071#0" expanded="true" />
-            <element signature="e#1104#1105#0" expanded="true" />
-            <element signature="e#1138#1139#0" expanded="true" />
-            <element signature="e#1168#1169#0" expanded="true" />
-            <element signature="e#1214#1215#0" expanded="true" />
-            <element signature="e#1252#1253#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2851,60 +2755,265 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="239">
           <caret line="16" column="5" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TraveHelper/src/main/assets/litepal.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="37">
+          <caret line="21" column="21" selection-start-line="21" selection-start-column="21" selection-end-line="21" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.bumptech.glide/glide/3.6.1/c84c6f18844d9ae76308619008d40277de5e77d3/glide-3.6.1-sources.jar!/com/bumptech/glide/RequestManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="211">
+          <caret line="303" column="23" selection-start-line="303" selection-start-column="23" selection-end-line="303" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TraveHelper/src/main/java/bzu/skyn/travehelper/map/GetLocation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="185">
+          <caret line="5" column="29" selection-start-line="5" selection-start-column="29" selection-end-line="5" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TraveHelper/src/main/res/layout/activity_search.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="444">
+          <caret line="12" column="18" selection-start-line="12" selection-start-column="18" selection-end-line="12" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TraveHelper/src/main/AndroidManifest.xml">
+      <provider editor-type-id="android-manifest">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-999">
+          <caret line="37" column="40" selection-start-line="37" selection-start-column="40" selection-end-line="37" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TraveHelper/src/main/res/drawable/btn_default_small.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="74">
+          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TraveHelper/src/main/res/layout/tool.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="333">
+          <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TraveHelper/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="104">
+          <caret line="13" column="16" selection-start-line="13" selection-start-column="16" selection-end-line="13" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TraveHelper/src/main/res/drawable/positioning.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/TraveHelper/libs/AMap3DMap_5.5.0_AMapNavi_5.4.0_AMapSearch_5.5.0_AMapLocation_3.6.1_20171107.jar!/com/amap/api/navi/model/NaviLatLng.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="287">
+          <caret line="17" column="11" selection-start-line="17" selection-start-column="11" selection-end-line="17" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TraveHelper/src/main/java/bzu/skyn/travehelper/MainActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="181">
+          <caret line="96" column="0" selection-start-line="96" selection-start-column="0" selection-end-line="96" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TraveHelper/src/main/res/layout/activity_navi.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="259">
+          <caret line="7" column="27" selection-start-line="7" selection-start-column="27" selection-end-line="7" selection-end-column="27" />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TraveHelper/src/main/java/bzu/skyn/travehelper/map/SearchAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="666">
+          <caret line="64" column="21" selection-start-line="64" selection-start-column="21" selection-end-line="64" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TraveHelper/src/main/java/bzu/skyn/travehelper/util/GaodeSearchPoiAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="354">
+          <caret line="54" column="48" selection-start-line="54" selection-start-column="48" selection-end-line="54" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TraveHelper/src/main/java/bzu/skyn/travehelper/NaviActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="261">
+          <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+          <folding>
+            <element signature="e#2944#2956#0" expanded="true" />
+            <element signature="e#3016#3028#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TraveHelper/src/main/res/layout/activity_map.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="297">
+          <caret line="51" column="24" selection-start-line="51" selection-start-column="24" selection-end-line="51" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TraveHelper/src/main/java/bzu/skyn/travehelper/BaseActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="457">
+          <caret line="37" column="18" selection-start-line="37" selection-start-column="18" selection-end-line="37" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TraveHelper/src/main/java/bzu/skyn/travehelper/AMapActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="37">
+          <caret line="442" column="48" selection-start-line="442" selection-start-column="25" selection-end-line="442" selection-end-column="48" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#335#336#0" expanded="true" />
-            <element signature="e#361#362#0" expanded="true" />
-            <element signature="e#399#400#0" expanded="true" />
-            <element signature="e#429#430#0" expanded="true" />
-            <element signature="e#461#462#0" expanded="true" />
-            <element signature="e#489#490#0" expanded="true" />
-            <element signature="e#531#532#0" expanded="true" />
-            <element signature="e#565#566#0" expanded="true" />
+            <element signature="e#3691#3708#0" expanded="false" />
+            <element signature="e#4031#4071#0" expanded="false" />
+            <element signature="class#5440:5854" expanded="false" />
+            <element signature="method#beforeTextChanged#0;class#5440:5854" expanded="false" />
+            <element signature="method#onTextChanged#0;class#5440:5854" expanded="false" />
+            <element signature="method#inquireList#0;class#AMapActivity#0" expanded="false" />
+            <element signature="method#initMap#0;class#AMapActivity#0" expanded="false" />
+            <element signature="method#goSearch#0;class#AMapActivity#0" expanded="false" />
+            <element signature="method#goSearchWithlatLon#0;class#AMapActivity#0" expanded="false" />
+            <element signature="method#onDestroy#0;class#AMapActivity#0" expanded="false" />
+            <element signature="method#onResume#0;class#AMapActivity#0" expanded="false" />
+            <element signature="method#onPause#0;class#AMapActivity#0" expanded="false" />
+            <element signature="method#onSaveInstanceState#0;class#AMapActivity#0" expanded="false" />
+            <element signature="method#onRegeocodeSearched#0;class#AMapActivity#0" expanded="false" />
+            <element signature="method#onGeocodeSearched#0;class#AMapActivity#0" expanded="false" />
+            <element signature="method#getMyLocation#0;class#AMapActivity#0" expanded="false" />
+            <element signature="e#19450#20496#0" expanded="true" />
+            <element signature="e#20495#20496#0" expanded="true" />
+            <element signature="method#onPoiItemSearched#0;class#AMapActivity#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TraveHelper/src/main/java/bzu/skyn/travehelper/WeatherActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="37">
+          <caret line="518" column="24" selection-start-line="516" selection-start-column="8" selection-end-line="518" selection-end-column="24" />
+          <folding>
+            <element signature="method#showTast#0;class#WeatherActivity#0" expanded="false" />
+            <element signature="e#12498#12525#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TraveHelper/src/main/res/layout/list_head_search.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="333">
+          <caret line="9" column="30" selection-start-line="9" selection-start-column="30" selection-end-line="9" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TraveHelper/src/main/res/layout/item_search_location.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="185">
+          <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/AppData/Local/Android/sdk/platforms/android-25/android.jar!/android/accounts/NetworkErrorException.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="181">
+          <caret line="10" column="11" selection-start-line="10" selection-start-column="11" selection-end-line="10" selection-end-column="11" />
+          <folding>
+            <element signature="e#275#276#0" expanded="true" />
+            <element signature="e#326#327#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TraveHelper/src/main/java/bzu/skyn/travehelper/util/AttractionAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="277">
+          <caret line="60" column="53" selection-start-line="60" selection-start-column="53" selection-end-line="60" selection-end-column="53" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TraveHelper/src/main/res/layout/item_attractions.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="191">
+          <caret line="31" column="27" selection-start-line="31" selection-start-column="27" selection-end-line="31" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TraveHelper/src/main/java/bzu/skyn/travehelper/SearchActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="346">
+          <caret line="141" column="37" selection-start-line="141" selection-start-column="37" selection-end-line="141" selection-end-column="37" />
+          <folding>
+            <element signature="e#4360#5205#0" expanded="true" />
+            <element signature="e#5204#5205#0" expanded="true" />
+            <element signature="e#5271#5458#0" expanded="true" />
+            <element signature="e#5457#5458#0" expanded="true" />
+            <element signature="e#7276#7638#0" expanded="true" />
+            <element signature="e#7637#7638#0" expanded="true" />
+            <element signature="e#7660#7944#0" expanded="true" />
+            <element signature="e#7943#7944#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/TraveHelper/src/main/java/bzu/skyn/travehelper/tools/JsonTools.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="128">
-          <caret line="114" column="39" selection-start-line="114" selection-start-column="39" selection-end-line="114" selection-end-column="39" />
+        <state relative-caret-position="239">
+          <caret line="37" column="12" selection-start-line="37" selection-start-column="12" selection-end-line="37" selection-end-column="12" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TraveHelper/src/main/assets/litepal.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="21" column="21" selection-start-line="21" selection-start-column="21" selection-end-line="21" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TraveHelper/src/main/java/bzu/skyn/travehelper/WeatherActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="138" column="38" selection-start-line="138" selection-start-column="38" selection-end-line="138" selection-end-column="39" />
-          <folding>
-            <element signature="e#2648#2666#0" expanded="true" />
-            <element signature="e#5428#5446#0" expanded="true" />
-            <element signature="e#5869#6781#0" expanded="true" />
-            <element signature="e#6389#6739#0" expanded="true" />
-            <element signature="e#6738#6739#0" expanded="true" />
-            <element signature="e#6780#6781#0" expanded="true" />
-            <element signature="e#6984#7358#0" expanded="true" />
-            <element signature="e#7357#7358#0" expanded="true" />
-            <element signature="e#7405#9084#0" expanded="true" />
-            <element signature="e#8284#9066#0" expanded="true" />
-            <element signature="e#9065#9066#0" expanded="true" />
-            <element signature="e#9083#9084#0" expanded="true" />
-            <element signature="method#showTast#0;class#WeatherActivity#0" expanded="false" />
-            <element signature="e#9363#11843#0" expanded="true" />
-            <element signature="e#11842#11843#0" expanded="true" />
-            <element signature="e#12283#12310#0" expanded="false" />
-            <element signature="e#17008#17683#0" expanded="true" />
-            <element signature="e#17682#17683#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>

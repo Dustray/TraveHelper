@@ -1,8 +1,9 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 10
+    compileSdkVersion 25
     buildToolsVersion "25.0.2"
+    useLibrary 'org.apache.http.legacy'
     defaultConfig {
         applicationId "bzu.skyn.travehelper"
         minSdkVersion 19
@@ -12,7 +13,6 @@ android {
     }
     buildTypes {
         release {
-            minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
         }
     }
@@ -24,12 +24,19 @@ android {
 }
 
 dependencies {
-    compile 'com.android.support:support-v4:22.0.0'
     compile files('libs/MapApi.jar')
     compile files('libs/ksoap2-android-assembly-3.6.2-jar-with-dependencies.jar')
-    compile 'com.google.code.gson:gson:2.8.2'
     compile files('libs/showapi_sdk.jar')
-    compile files('libs/AMap2DMap_5.2.0_AMapSearch_5.3.1_AMapLocation_3.6.1_20171012.jar')
+    compile files('libs/AMap3DMap_5.5.0_AMapNavi_5.4.0_AMapSearch_5.5.0_AMapLocation_3.6.1_20171107.jar')
+    compile 'com.google.code.gson:gson:2.8.2'
     compile 'com.contrarywind:Android-PickerView:3.2.7'
     compile 'org.litepal.android:core:1.6.0'
+    compile 'com.github.bumptech.glide:glide:4.3.1'
+    compile 'com.android.support:support-v4:25.0.0'
+    compile 'com.android.support:appcompat-v7:25.3.1'
+    compile 'com.android.support.constraint:constraint-layout:1.0.0-beta4'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.3.1'
+}
+configurations.all {
+    resolutionStrategy.force 'com.android.support:support-annotations:23.1.0'
 }

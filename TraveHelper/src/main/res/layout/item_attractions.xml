@@ -7,15 +7,15 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="5dp"
-        android:background="#55ffffff">
+        android:background="#ddffffff">
 
         <TextView
             android:id="@+id/tv_att_name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="18sp"
-            android:layout_margin="2dp"
-            android:textColor="#FF5722"
+            android:layout_margin="5dp"
+            android:textColor="#0288D1"
             android:text="景点名称" />
 
         <TextView
@@ -24,15 +24,17 @@
             android:layout_height="wrap_content"
             android:layout_alignParentRight="true"
             android:layout_margin="4dp"
+            android:textColor="#777"
             android:text="地点" />
         <TextView
             android:id="@+id/tv_att_content"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="25dp"
+            android:layout_marginTop="30dp"
             android:layout_marginLeft="3dp"
             android:layout_marginRight="3dp"
             android:layout_marginBottom="3dp"
+            android:textColor="#777"
             android:text="海丰塔，史称唐塔，原名大觉寺塔，始建于唐贞观十三年（公元639年），碑记为“尉迟敬德监建”，距今已1300多年。原塔为八角密檐式砖石结构，青砖到顶，飞檐挑角，角系铜铃，塔身13级，第一级南北各一门，其上每一级一南门，顶有相轮，全塔高约36米。明代维修时，吏部尚书杨巍撰有《重修大觉寺宝塔》，并刻石竖碑。清康熙七年（公元1668年）元月地震，大觉寺塔裂；光绪十四年（公元1888年）五月地震，塔圯其半，1957年，因塔身破损严重，有倒塌之虞，报省批准，将地表以上塔身拆毁。" />
         <ImageView
             android:id="@+id/iv_att_image"
@@ -42,6 +44,7 @@
             android:layout_margin="3dp"
             android:maxHeight="150dp"/>
         <LinearLayout
+            android:id="@+id/ll_attr_position"
             android:layout_below="@id/iv_att_image"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -57,6 +60,7 @@
                 android:layout_height="wrap_content"
                 android:layout_alignParentRight="true"
                 android:layout_margin="1dp"
+                android:textColor="#777"
                 android:text="详细地点" />
         </LinearLayout>
     </RelativeLayout>

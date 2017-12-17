@@ -18,9 +18,12 @@ import org.xmlpull.v1.XmlPullParserException;
 import bzu.skyn.travehelper.entity.AttractionEntity;
 import bzu.skyn.travehelper.search.SceneryScrollView;
 import bzu.skyn.travehelper.R;
+import bzu.skyn.travehelper.tools.FastToast;
 import bzu.skyn.travehelper.tools.JsonTools;
 import bzu.skyn.travehelper.util.AttractionAdapter;
 
+import android.accounts.NetworkErrorException;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
@@ -109,10 +112,14 @@ public class SearchActivity extends Activity implements OnGestureListener,
 						public void run() {
 							String appid="48846";//要替换成自己的
 							String secret="6296793c56db40dfbbccf0353babe62c";//要替换成自己的
+							SharedPreferences preference = getSharedPreferences("myWeather", MODE_PRIVATE);
+							//city = readSharpPreference();
+							String cityid = preference.getString("cityid", "283");
+							String proid = preference.getString("proid", "22");
 							final String res=new ShowApiRequest( "http://route.showapi.com/268-1", appid, secret)
 									.addTextPara("keyword", "")
-									.addTextPara("proId", "22")
-									.addTextPara("cityId", "283")
+									.addTextPara("proId", proid)
+									.addTextPara("cityId", cityid)
 									.addTextPara("areaId", "")
 									.addTextPara("page", "")
 									.post();
@@ -123,23 +130,37 @@ public class SearchActivity extends Activity implements OnGestureListener,
 								public void run() {
 									//traveltext.setText(res+"  "+new Date());
 
-									List<AttractionEntity> attList = JsonTools.jsonAttraction(res);
-									View headerView = View.inflate(SearchActivity.this, R.layout.list_head_search, null);
-									lvAttraction.addHeaderView(headerView);
+									List<AttractionEntity> attList = null;
+									try {
+										attList = JsonTools.jsonAttraction(res);
+									} catch (NetworkErrorException e) {
+										e.printStackTrace();
+										Message msg = new Message();
+										msg.what = 1;
+										errorHandler.sendMessage(msg);
+										return;
+									}
+									//View headerView = View.inflate(SearchActivity.this, R.layout.list_head_search, null);
+									//lvAttraction.addHeaderView(headerView);
 									//Toast.makeText(SearchActivity.this,":"+attList.get(0).getName(), Toast.LENGTH_LONG).show();
 									AttractionAdapter adapter = new AttractionAdapter(SearchActivity.this,R.layout.item_attractions,attList);
 									lvAttraction.setAdapter(adapter);
-
-
 								}
 							});
 						}
 					}.start();
-
-
+		}
+	protected Handler errorHandler =  new Handler(){
+		@Override
+		public void handleMessage(Message msg) {
+			switch(msg.what){
+				case 1:
+					FastToast.showToast(SearchActivity.this,"网络错误，请查看网络");
+					break;
+			}
 
 		}
-
+	};
 	private void init() {		
 		query = (Button) layout.findViewById(R.id.button1);
 		query.setOnClickListener(new OnClickListener() {
@@ -414,4 +435,9 @@ public class SearchActivity extends Activity implements OnGestureListener,
 		super.onDestroy();
 	}
 
+	@Override
+	protected void onResume() {
+		super.onResume();
+		getAttractions();
+	}
 }

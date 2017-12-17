@@ -15,6 +15,7 @@
             android:layout_height="wrap_content"
             android:layout_below="@+id/textView1"
             android:focusable="false"
+            android:visibility="gone"
             android:scrollbars="none" >
 
             <RelativeLayout

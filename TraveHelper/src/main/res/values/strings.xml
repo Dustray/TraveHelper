@@ -74,5 +74,5 @@
     <string name="gengduo">\t此版本适用于android2.3.3及以上操作系统系列手机，对于在其他操作系统平台的手机上使用本软件，出现任何问题，本小组不承担责任。\n本软件下载，安装和使用免费，下载使用过程中产生的GPRS数据流量费用，由运营商收取。</string>
     <string name="back">返回主菜单</string>
     <string name="title_activity_tuijian">TuijianActivity</string>
-    
+
 </resources>

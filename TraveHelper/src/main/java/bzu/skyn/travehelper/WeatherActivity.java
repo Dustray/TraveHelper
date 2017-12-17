@@ -273,6 +273,8 @@ public class WeatherActivity extends Activity {
                         SharedPreferences preference1 = getSharedPreferences("myWeather", MODE_PRIVATE);
                         SharedPreferences.Editor editor1 = preference1.edit();
                         editor1.putString("city", thisCity);
+                        editor1.putString("cityid", provinceListList.get(options1).get(option2).getIds());
+                        editor1.putString("proid", provinceListList.get(options1).get(option2).getProId());
                         editor1.commit();
                         // Toast.makeText(WeatherActivity.this,"mycity1："+readSharpPreference() , Toast.LENGTH_LONG).show();
                         city = thisCity;
@@ -420,6 +422,9 @@ public class WeatherActivity extends Activity {
         //Log.i("logme", "ss22" + detail.get(0).getCity());
 
         // 取得<string>10月13日 中雨转小雨</string>中的数据
+        if(detail.get(0)==null){
+            FastToast.showToast(WeatherActivity.this,"天气信息获取失败");
+            return;}
         String date = detail.get(0).getDate();
         // 将"10月13日 10:42:20"拆分成两个数组
         String[] date_array = date.split(" ");

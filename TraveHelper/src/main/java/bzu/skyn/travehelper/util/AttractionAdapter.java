@@ -10,7 +10,12 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.TextView;
+
+import com.bumptech.glide.Glide;
+import com.bumptech.glide.Priority;
+import com.bumptech.glide.request.RequestOptions;
 
 import java.io.BufferedInputStream;
 import java.io.BufferedOutputStream;
@@ -50,7 +55,7 @@ public class AttractionAdapter extends ArrayAdapter<AttractionEntity> {
             viewHolder.aAddress = (TextView) view.findViewById(R.id.tv_att_address);   //获取控件
             viewHolder.aAddressMore = (TextView) view.findViewById(R.id.tv_att_addressmore);
             viewHolder.aContent = (TextView) view.findViewById(R.id.tv_att_content);
-
+            viewHolder.aLL = (LinearLayout) view.findViewById(R.id.ll_attr_position);
             view.setTag(viewHolder);
         }else{
             view=convertView;           //convertView不为空代表布局被加载过，只需要将convertView的值取出即可
@@ -59,13 +64,27 @@ public class AttractionAdapter extends ArrayAdapter<AttractionEntity> {
 
         AttractionEntity att = getItem(position);//实例指定位置的水果
 
-        if(att.getImageUrl()!=null)
-            asyncloadImage(viewHolder.aImage,att.getImageUrl());
+        if(att.getImageUrl()!=null) {
+//            asyncloadImage(viewHolder.aImage,att.getImageUrl());
+//        Glide.with(mContext)
+//                .load(att.getImageUrl())
+//                .into(viewHolder.aImage);
+            //然后定义RequestOptions:
+            RequestOptions options = new RequestOptions()
+//                    .placeholder(R.drawable.hainansanya)
+//                    .error(R.drawable.hainansanya)
+                    .priority(Priority.HIGH);
+            //调用glide显示图片：
+            Glide.with(mContext).load(att.getImageUrl()).apply(options).into(viewHolder.aImage);
+        }
+
         viewHolder.aName .setText(att.getName());
         viewHolder.aAddress.setText(att.getAddress());
         viewHolder.aAddressMore .setText(att.getAddressMore());
         viewHolder.aContent .setText(att.getContent());
-
+if(att.getImageUrl()==null){
+    viewHolder.aLL.setVisibility(View.GONE);
+}
         return view;
 
     }
@@ -113,6 +132,7 @@ public class AttractionAdapter extends ArrayAdapter<AttractionEntity> {
                     Bitmap bitmap = (Bitmap) msg.obj;
                     if (imageView != null && uri != null) {
                         imageView.setImageBitmap(bitmap);
+
                     }
 
                 }
@@ -149,5 +169,6 @@ class ViewHolder{      //当布局加载过后，保存获取到的控件信息�
     TextView aAddressMore;
     TextView aContent;
     ImageView aImage;
+    LinearLayout aLL;
 }
 

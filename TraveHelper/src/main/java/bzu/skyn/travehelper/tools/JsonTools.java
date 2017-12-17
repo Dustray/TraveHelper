@@ -1,10 +1,12 @@
 package bzu.skyn.travehelper.tools;
 
+import android.accounts.NetworkErrorException;
 import android.util.Log;
 
 import com.google.gson.JsonArray;
 import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
+import com.google.gson.JsonSyntaxException;
 
 import org.json.JSONObject;
 
@@ -25,13 +27,18 @@ import bzu.skyn.travehelper.entity.WeatherJsonEntity;
 
 public class JsonTools {
 
-    public static List<AttractionEntity> jsonAttraction(String jsonString){
+    public static List<AttractionEntity> jsonAttraction(String jsonString) throws NetworkErrorException{
+        if(jsonString==null){
+            throw new NullPointerException();
+        }
         List<AttractionEntity> list =new ArrayList<AttractionEntity>();
-
-
-
         JsonParser parser = new JsonParser();// json 解析器
-        JsonObject obj = (JsonObject) parser.parse(jsonString); /* 获取返回状态码 */
+        JsonObject obj;
+        try {
+             obj = (JsonObject) parser.parse(jsonString); /* 获取返回状态码 */
+        }catch(JsonSyntaxException e){
+            throw new NetworkErrorException();
+        }
         String resultCode = obj.get("showapi_res_code").getAsString(); /* 如果状态码是200说明返回数据成功*/
         if (0 == Integer.parseInt(resultCode)) {
             //JsonArray futureWeatherArray = obj.get("results").getAsJsonArray();
