@@ -31,96 +31,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fab1c570-c7fe-40e5-a10c-45ef2f4e0b37" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TraveHelper/src/main/jniLibs/arm64-v8a/libGNaviData.so" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TraveHelper/src/main/jniLibs/arm64-v8a/libGNaviGuide.so" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TraveHelper/src/main/jniLibs/arm64-v8a/libGNaviMap.so" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TraveHelper/src/main/jniLibs/arm64-v8a/libGNaviMapex.so" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TraveHelper/src/main/jniLibs/arm64-v8a/libGNaviRoute.so" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TraveHelper/src/main/jniLibs/arm64-v8a/libGNaviSearch.so" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TraveHelper/src/main/jniLibs/arm64-v8a/libGNaviUtils.so" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TraveHelper/src/main/jniLibs/arm64-v8a/libRoadLineRebuildAPI.so" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TraveHelper/src/main/jniLibs/arm64-v8a/librtbt800.so" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TraveHelper/src/main/jniLibs/arm64-v8a/libwtbt800.so" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TraveHelper/src/main/jniLibs/armeabi-v7a/libGNaviData.so" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TraveHelper/src/main/jniLibs/armeabi-v7a/libGNaviGuide.so" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TraveHelper/src/main/jniLibs/armeabi-v7a/libGNaviMap.so" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TraveHelper/src/main/jniLibs/armeabi-v7a/libGNaviMapex.so" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TraveHelper/src/main/jniLibs/armeabi-v7a/libGNaviPos.so" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TraveHelper/src/main/jniLibs/armeabi-v7a/libGNaviRoute.so" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TraveHelper/src/main/jniLibs/armeabi-v7a/libGNaviSearch.so" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TraveHelper/src/main/jniLibs/armeabi-v7a/libGNaviUtils.so" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TraveHelper/src/main/jniLibs/armeabi-v7a/libRoadLineRebuildAPI.so" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TraveHelper/src/main/jniLibs/armeabi-v7a/librtbt800.so" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TraveHelper/src/main/jniLibs/armeabi-v7a/libwtbt800.so" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TraveHelper/src/main/jniLibs/armeabi/libGNaviData.so" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TraveHelper/src/main/jniLibs/armeabi/libGNaviGuide.so" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TraveHelper/src/main/jniLibs/armeabi/libGNaviMap.so" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TraveHelper/src/main/jniLibs/armeabi/libGNaviMapex.so" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TraveHelper/src/main/jniLibs/armeabi/libGNaviPos.so" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TraveHelper/src/main/jniLibs/armeabi/libGNaviRoute.so" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TraveHelper/src/main/jniLibs/armeabi/libGNaviSearch.so" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TraveHelper/src/main/jniLibs/armeabi/libGNaviUtils.so" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TraveHelper/src/main/jniLibs/armeabi/libRoadLineRebuildAPI.so" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TraveHelper/src/main/jniLibs/armeabi/librtbt800.so" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TraveHelper/src/main/jniLibs/armeabi/libwtbt800.so" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TraveHelper/src/main/jniLibs/x86/libGNaviData.so" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TraveHelper/src/main/jniLibs/x86/libGNaviGuide.so" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TraveHelper/src/main/jniLibs/x86/libGNaviMap.so" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TraveHelper/src/main/jniLibs/x86/libGNaviMapex.so" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TraveHelper/src/main/jniLibs/x86/libGNaviPos.so" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TraveHelper/src/main/jniLibs/x86/libGNaviRoute.so" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TraveHelper/src/main/jniLibs/x86/libGNaviSearch.so" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TraveHelper/src/main/jniLibs/x86/libGNaviUtils.so" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TraveHelper/src/main/jniLibs/x86/libRoadLineRebuildAPI.so" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TraveHelper/src/main/jniLibs/x86/librtbt800.so" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TraveHelper/src/main/jniLibs/x86/libwtbt800.so" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TraveHelper/src/main/jniLibs/x86_64/libGNaviData.so" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TraveHelper/src/main/jniLibs/x86_64/libGNaviGuide.so" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TraveHelper/src/main/jniLibs/x86_64/libGNaviMap.so" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TraveHelper/src/main/jniLibs/x86_64/libGNaviMapex.so" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TraveHelper/src/main/jniLibs/x86_64/libGNaviPos.so" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TraveHelper/src/main/jniLibs/x86_64/libGNaviRoute.so" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TraveHelper/src/main/jniLibs/x86_64/libGNaviSearch.so" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TraveHelper/src/main/jniLibs/x86_64/libGNaviUtils.so" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TraveHelper/src/main/jniLibs/x86_64/libRoadLineRebuildAPI.so" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TraveHelper/src/main/jniLibs/x86_64/librtbt800.so" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TraveHelper/src/main/jniLibs/x86_64/libwtbt800.so" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TraveHelper/src/main/res/drawable-hdpi/ic_back.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TraveHelper/src/main/res/drawable-mdpi/ic_back.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TraveHelper/src/main/res/drawable-xhdpi/ic_back.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TraveHelper/src/main/res/drawable-xxhdpi/ic_back.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/animated_vector_drawable_25_3_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/appcompat_v7_25_3_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/constraint_layout_1_0_0_beta4.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/constraint_layout_solver_1_0_0_beta4.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/support_compat_25_3_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/support_core_ui_25_3_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/support_core_utils_25_3_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/support_fragment_25_3_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/support_media_compat_25_3_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/support_v4_25_3_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/support_vector_drawable_25_3_1.xml" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/AMap2DMap_5_2_0_AMapSearch_5_3_1_AMapLocation_3_6_1_20171012.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/android_android_10.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/support_annotations_22_0_0.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/support_v4_22_0_0.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/TraveHelper/libs/AMap2DMap_5.2.0_AMapSearch_5.3.1_AMapLocation_3.6.1_20171012.jar" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TraveHelper/src/main/res/drawable-hdpi/ic_launcher.png" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TraveHelper/build.gradle" afterPath="$PROJECT_DIR$/TraveHelper/build.gradle" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TraveHelper/src/main/AndroidManifest.xml" afterPath="$PROJECT_DIR$/TraveHelper/src/main/AndroidManifest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TraveHelper/src/main/java/bzu/skyn/travehelper/AMapActivity.java" afterPath="$PROJECT_DIR$/TraveHelper/src/main/java/bzu/skyn/travehelper/AMapActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TraveHelper/src/main/java/bzu/skyn/travehelper/SearchActivity.java" afterPath="$PROJECT_DIR$/TraveHelper/src/main/java/bzu/skyn/travehelper/SearchActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TraveHelper/src/main/java/bzu/skyn/travehelper/WeatherActivity.java" afterPath="$PROJECT_DIR$/TraveHelper/src/main/java/bzu/skyn/travehelper/WeatherActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TraveHelper/src/main/java/bzu/skyn/travehelper/tools/JsonTools.java" afterPath="$PROJECT_DIR$/TraveHelper/src/main/java/bzu/skyn/travehelper/tools/JsonTools.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TraveHelper/src/main/java/bzu/skyn/travehelper/util/AttractionAdapter.java" afterPath="$PROJECT_DIR$/TraveHelper/src/main/java/bzu/skyn/travehelper/util/AttractionAdapter.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TraveHelper/src/main/res/drawable/btn_default_small.xml" afterPath="$PROJECT_DIR$/TraveHelper/src/main/res/drawable/btn_default_small.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TraveHelper/src/main/res/layout/activity_map.xml" afterPath="$PROJECT_DIR$/TraveHelper/src/main/res/layout/activity_map.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TraveHelper/src/main/res/layout/item_attractions.xml" afterPath="$PROJECT_DIR$/TraveHelper/src/main/res/layout/item_attractions.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TraveHelper/src/main/res/layout/item_search_location.xml" afterPath="$PROJECT_DIR$/TraveHelper/src/main/res/layout/item_search_location.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TraveHelper/src/main/res/layout/list_head_search.xml" afterPath="$PROJECT_DIR$/TraveHelper/src/main/res/layout/list_head_search.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TraveHelper/src/main/res/layout/tool.xml" afterPath="$PROJECT_DIR$/TraveHelper/src/main/res/layout/tool.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TraveHelper/src/main/res/values/strings.xml" afterPath="$PROJECT_DIR$/TraveHelper/src/main/res/values/strings.xml" />
     </list>
     <ignored path="TraveHelper.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -166,11 +79,24 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="JsonTools.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="JsonTools.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/TraveHelper/src/main/java/bzu/skyn/travehelper/tools/JsonTools.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="239">
               <caret line="37" column="12" selection-start-line="37" selection-start-column="12" selection-end-line="37" selection-end-column="12" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AndroidManifest.xml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/TraveHelper/src/main/AndroidManifest.xml">
+          <provider editor-type-id="android-manifest">
+            <state />
+          </provider>
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="296">
+              <caret line="32" column="41" selection-start-line="32" selection-start-column="41" selection-end-line="32" selection-end-column="41" />
               <folding />
             </state>
           </provider>
@@ -2008,7 +1934,6 @@
         <option value="$PROJECT_DIR$/TraveHelper/src/main/java/bzu/skyn/travehelper/util/SoapUtil.java" />
         <option value="$PROJECT_DIR$/TraveHelper/src/main/java/bzu/skyn/travehelper/tools/ListDataSave.java" />
         <option value="$PROJECT_DIR$/TraveHelper/src/main/java/bzu/skyn/travehelper/entity/ProvinceListEntity.java" />
-        <option value="$PROJECT_DIR$/TraveHelper/src/main/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/TraveHelper/src/main/res/values/litepal.xml" />
         <option value="$PROJECT_DIR$/TraveHelper/src/main/assets/litepal.xml" />
         <option value="$PROJECT_DIR$/TraveHelper/src/main/java/bzu/skyn/travehelper/entity/CityEntity.java" />
@@ -2028,6 +1953,7 @@
         <option value="$PROJECT_DIR$/TraveHelper/src/main/res/layout/item_attractions.xml" />
         <option value="$PROJECT_DIR$/TraveHelper/src/main/java/bzu/skyn/travehelper/SearchActivity.java" />
         <option value="$PROJECT_DIR$/TraveHelper/src/main/java/bzu/skyn/travehelper/tools/JsonTools.java" />
+        <option value="$PROJECT_DIR$/TraveHelper/src/main/AndroidManifest.xml" />
       </list>
     </option>
   </component>
@@ -2791,17 +2717,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/TraveHelper/src/main/AndroidManifest.xml">
-      <provider editor-type-id="android-manifest">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-999">
-          <caret line="37" column="40" selection-start-line="37" selection-start-column="40" selection-end-line="37" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/TraveHelper/src/main/res/drawable/btn_default_small.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="74">
@@ -3013,6 +2928,17 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="239">
           <caret line="37" column="12" selection-start-line="37" selection-start-column="12" selection-end-line="37" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TraveHelper/src/main/AndroidManifest.xml">
+      <provider editor-type-id="android-manifest">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="296">
+          <caret line="32" column="41" selection-start-line="32" selection-start-column="41" selection-end-line="32" selection-end-column="41" />
           <folding />
         </state>
       </provider>
