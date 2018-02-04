@@ -2,7 +2,9 @@ package bzu.skyn.travehelper;
 
 import java.util.ArrayList;
 import java.util.Date;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 import org.ksoap2.serialization.SoapObject;
 import org.litepal.LitePal;
@@ -20,7 +22,9 @@ import bzu.skyn.travehelper.tools.JsonTools;
 import bzu.skyn.travehelper.tools.ListDataSave;
 import bzu.skyn.travehelper.util.AttractionAdapter;
 import bzu.skyn.travehelper.util.SoapUtil;
+import bzu.skyn.travehelper.webservice.WebServiceConnection;
 
+import android.accounts.NetworkErrorException;
 import android.annotation.SuppressLint;
 import android.app.backup.SharedPreferencesBackupHelper;
 import android.database.sqlite.SQLiteDatabase;
@@ -148,16 +152,28 @@ public class WeatherActivity extends Activity {
                 new Thread() {
                     //在新线程中发送网络请求
                     public void run() {
-                        String appid = "48846";//要替换成自己的
-                        String secret = "6296793c56db40dfbbccf0353babe62c";//要替换成自己的
-                        final String res = new ShowApiRequest("http://route.showapi.com/268-2", appid, secret)
-                                .post();
-
+//                        String appid = "48846";//要替换成自己的
+//                        String secret = "6296793c56db40dfbbccf0353babe62c";//要替换成自己的
+//                        final String res = new ShowApiRequest("http://route.showapi.com/268-2", appid, secret)
+//                                .post();
+                        String res="";
+                        WebServiceConnection wsc = new WebServiceConnection();
+                        try {
+                            Map<String,String> para = new HashMap<>();
+                            res=wsc.getRemoteInfo(para,"getProvinceJson");
+                        } catch (Exception e) {
+                            e.printStackTrace();
+                        }
                         System.out.println(res);
                         //把返回内容通过handler对象更新到界面
+                        final String finalRes = res;
                         mHandler1.post(new Thread() {
                             public void run() {
-                                provinceList = JsonTools.jsonProvince(res);
+                                try {
+                                    provinceList = JsonTools.jsonProvince(finalRes);
+                                } catch (NetworkErrorException e) {
+                                    e.printStackTrace();
+                                }
                                 th1.start();
                                 //FastToast.showToast(WeatherActivity.this,"s"+provinceList.get(0).getName());
                             }
@@ -196,14 +212,24 @@ public class WeatherActivity extends Activity {
             String secret = "6296793c56db40dfbbccf0353babe62c";//要替换成自己的
             int requestTag = 0;
             for (ProvinceEntity entity : provinceList) {
-                final String res = new ShowApiRequest("http://route.showapi.com/268-3", appid, secret)
-                        .addTextPara("proId", entity.getIds())
-                        .post();
+//                final String res = new ShowApiRequest("http://route.showapi.com/268-3", appid, secret)
+//                        .addTextPara("proId", entity.getIds())
+//                        .post();
+                String res="";
+                WebServiceConnection wsc = new WebServiceConnection();
+                try {
+                    Map<String,String> para = new HashMap<>();
+                    para.put("provinceid", entity.getIds());
+                    res=wsc.getRemoteInfo(para,"getCityJson");
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
                 cityList = JsonTools.jsonCity(res);
                 provinceListList.add(cityList);
 
                 try {
-                    sleep(500);
+                    //一秒只能调用三次
+                    sleep(335);
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                     Log.i("logme", "SleepError" + e.toString());
@@ -259,16 +285,7 @@ public class WeatherActivity extends Activity {
                         } else if (thisProCity.equals("天津")) {
                             thisCity = "天津";
                         }
-//                        if( thisProCity.equals("上海")||
-//                                thisProCity.equals("重庆")||
-//                                thisProCity.equals("天津")){
-//                            if( thisCity.substring(thisCity.length() - 2,thisCity.length()).equals("新区")) {
-//                                thisCity = thisCity.substring(0, thisCity.length() - 2);
-//                            }else if( thisCity.substring(thisCity.length() - 1,thisCity.length()).equals("区")||
-//                                    thisCity.substring(thisCity.length() - 1,thisCity.length()).equals("县")) {
-//                                thisCity = thisCity.substring(0, thisCity.length() - 1);
-//                            }
-//                        }
+
                         FastToast.showToast(WeatherActivity.this, thisCity);
                         SharedPreferences preference1 = getSharedPreferences("myWeather", MODE_PRIVATE);
                         SharedPreferences.Editor editor1 = preference1.edit();
@@ -288,112 +305,11 @@ public class WeatherActivity extends Activity {
                     .isCenterLabel(false) //是否只显示中间选中项的label文字，false则每项item全部都带有label。
                     .build();
 
-
             pvOptions.setPicker(provinceList, provinceListList);
             pvOptions.show();
         } else {
             FastToast.showToast(WeatherActivity.this, "正在更新城市信息，请稍后...");
         }
-//        switch (cityId) {
-//            case CITY:
-//                // 取得city_layout.xml中的视图
-//                final View view = LayoutInflater.from(this).inflate(
-//                        R.layout.city_layout, null);
-//
-//                // 省份Spinner
-//                province_spinner = (Spinner) view
-//                        .findViewById(R.id.province_spinner);
-//                // 城市Spinner
-//                city_spinner = (Spinner) view.findViewById(R.id.city_spinner);
-//
-//                // 省份列表
-//                provinces = SoapUtil.getProvinceList();
-//
-//                ArrayAdapter adapter = new ArrayAdapter(this,
-//                        android.R.layout.simple_spinner_item, provinces);
-//                adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-//
-//                province_spinner.setAdapter(adapter);
-//                // 省份Spinner监听器
-//                province_spinner
-//                        .setOnItemSelectedListener(new OnItemSelectedListener() {
-//
-//                            @Override
-//                            public void onItemSelected(AdapterView<?> arg0,
-//                                                       View arg1, int position, long arg3) {
-//
-//                                citys = SoapUtil
-//                                        .getCityListByProvince(provinces
-//                                                .get(position));
-//
-//                                ArrayAdapter adapter1 = new ArrayAdapter(
-//                                        WeatherActivity.this,
-//                                        android.R.layout.simple_spinner_item, citys);
-//                                adapter1.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-//                                city_spinner.setAdapter(adapter1);
-//
-//                            }
-//
-//                            @Override
-//                            public void onNothingSelected(AdapterView<?> arg0) {
-//
-//                            }
-//                        });
-//
-//                // 城市Spinner监听器
-//                city_spinner.setOnItemSelectedListener(new OnItemSelectedListener() {
-//
-//                    @Override
-//                    public void onItemSelected(AdapterView<?> arg0, View arg1,
-//                                               int position, long arg3) {
-//                        city_str = citys.get(position);
-//                        String[] citydata = city_str.split(" ");
-//                        city = citydata[0];
-//                    }
-//
-//                    @Override
-//                    public void onNothingSelected(AdapterView<?> arg0) {
-//                    }
-//                });
-//
-//                // 选择城市对话框
-//                AlertDialog.Builder dialog = new AlertDialog.Builder(this);
-//                dialog.setTitle("请选择所属城市");
-//                dialog.setView(view);
-//                dialog.setPositiveButton("确定",
-//                        new DialogInterface.OnClickListener() {
-//                            @Override
-//                            public void onClick(DialogInterface dialog, int which) {
-//                                city_text.setText(city);
-//                                writeSharpPreference(city);
-//                                //@Dustray update &1Start
-//                                //refresh(city);
-//                                new Thread() {
-//                                    @Override
-//                                    public void run() {
-//                                        List<WeatherJsonEntity> wje = SoapUtil.getWeatherByCity(city);
-//                                        //Log.i("logme","InThread"+wje.getCity());
-//                                        Message msg = Message.obtain();
-//                                        msg.what = 1;
-//                                        msg.obj = wje;
-//                                        mhandler.sendMessage(msg);
-//                                    }
-//                                }.start();
-//                                //@Dustray update &1end
-//                            }
-//                        });
-//                dialog.setNegativeButton("取消",
-//                        new DialogInterface.OnClickListener() {
-//                            @Override
-//                            public void onClick(DialogInterface dialog, int which) {
-//                                dialog.dismiss();
-//                            }
-//                        });
-//                dialog.show();
-//                break;
-//            default:
-//                break;
-//        }
     }
 
     Handler mhandler = new Handler() {
@@ -476,9 +392,6 @@ public class WeatherActivity extends Activity {
         image.setImageResource(icon);
 
         // 取得第二天的天气情况
-//            TextView tomorrow_date = (TextView) findViewById(R.id.tomorrow_date);
-//            tomorrow_date.setText(detail.get(1).getDate());
-
         TextView tomorrow_qiweng = (TextView) findViewById(R.id.tomorrow_qiweng);
         tomorrow_qiweng.setText(detail.get(1).getLowTem() + "℃/" + detail.get(1).getHighTem() + "℃");
 
@@ -492,10 +405,6 @@ public class WeatherActivity extends Activity {
         tomorrow_image.setImageResource(icon1);
 
         // 取得第三天的天气情况
-
-//            TextView afterday_date = (TextView) findViewById(R.id.afterday_date);
-//            afterday_date.setText(date_str1[0]);
-
         TextView afterday_qiweng = (TextView) findViewById(R.id.afterday_qiweng);
         afterday_qiweng.setText(detail.get(2).getLowTem() + "℃/" + detail.get(2).getHighTem() + "℃");
 
@@ -507,28 +416,19 @@ public class WeatherActivity extends Activity {
         ImageView afterday_image = (ImageView) findViewById(R.id.afterday_image);
         int icon2 = imageTool.parseIcon(detail.get(2).getCodeDay() + ".png");
         afterday_image.setImageResource(icon2);
-
-
     }
 
-
     public void writeSharpPreference(String string) {
-
         SharedPreferences.Editor editor = preference.edit();
         editor.putString("city", string);
         editor.commit();
-
     }
-
     public String readSharpPreference() {
-
         String city = preference.getString("city", "青岛");
-
         Log.i("logme", "city-----------------:" + city);
         //this.city = city;
         return city;
     }
-
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {

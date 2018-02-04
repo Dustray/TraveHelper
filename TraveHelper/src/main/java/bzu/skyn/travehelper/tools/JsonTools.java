@@ -33,10 +33,12 @@ public class JsonTools {
         }
         List<AttractionEntity> list =new ArrayList<AttractionEntity>();
         JsonParser parser = new JsonParser();// json 解析器
-        JsonObject obj;
+        JsonObject obj=new JsonObject();
         try {
              obj = (JsonObject) parser.parse(jsonString); /* 获取返回状态码 */
         }catch(JsonSyntaxException e){
+            throw new NetworkErrorException();
+        }catch(ClassCastException e){
             throw new NetworkErrorException();
         }
         String resultCode = obj.get("showapi_res_code").getAsString(); /* 如果状态码是200说明返回数据成功*/
@@ -71,11 +73,16 @@ public class JsonTools {
         }
         return list;
     }
-    public static List<ProvinceEntity> jsonProvince(String jsonString){
+    public static List<ProvinceEntity> jsonProvince(String jsonString) throws NetworkErrorException{
         List<ProvinceEntity> list =new ArrayList<ProvinceEntity>();
 
         JsonParser parser = new JsonParser();// json 解析器
-        JsonObject obj = (JsonObject) parser.parse(jsonString); /* 获取返回状态码 */
+         JsonObject obj;
+        try {
+             obj= (JsonObject) parser.parse(jsonString); /* 获取返回状态码 */
+        }catch (ClassCastException e){
+            throw new NetworkErrorException();
+        }
         String resultCode = obj.get("showapi_res_code").getAsString(); /* 如果状态码是200说明返回数据成功*/
         if (0 == Integer.parseInt(resultCode)) {
             JsonObject showapi_res_body = obj.get("showapi_res_body").getAsJsonObject();

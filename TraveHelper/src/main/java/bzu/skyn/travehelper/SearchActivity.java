@@ -6,7 +6,9 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Date;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 import org.json.JSONObject;
 import org.ksoap2.SoapEnvelope;
@@ -21,6 +23,7 @@ import bzu.skyn.travehelper.R;
 import bzu.skyn.travehelper.tools.FastToast;
 import bzu.skyn.travehelper.tools.JsonTools;
 import bzu.skyn.travehelper.util.AttractionAdapter;
+import bzu.skyn.travehelper.webservice.WebServiceConnection;
 
 import android.accounts.NetworkErrorException;
 import android.content.SharedPreferences;
@@ -116,23 +119,33 @@ public class SearchActivity extends Activity implements OnGestureListener,
 							//city = readSharpPreference();
 							String cityid = preference.getString("cityid", "283");
 							String proid = preference.getString("proid", "22");
-							final String res=new ShowApiRequest( "http://route.showapi.com/268-1", appid, secret)
-									.addTextPara("keyword", "")
-									.addTextPara("proId", proid)
-									.addTextPara("cityId", cityid)
-									.addTextPara("areaId", "")
-									.addTextPara("page", "")
-									.post();
-
+//							final String res=new ShowApiRequest( "http://route.showapi.com/268-1", appid, secret)
+//									.addTextPara("keyword", "")
+//									.addTextPara("proId", proid)
+//									.addTextPara("cityId", cityid)
+//									.addTextPara("areaId", "")
+//									.addTextPara("page", "")
+//									.post();
+							String res="";
+							WebServiceConnection wsc = new WebServiceConnection();
+							try {
+								Map<String,String> para = new HashMap<>();
+								para.put("cityid",cityid);
+								para.put("proid",proid);
+								res=wsc.getRemoteInfo(para,"getAttractionJson");
+							} catch (Exception e) {
+								e.printStackTrace();
+							}
 							System.out.println(res);
 							//把返回内容通过handler对象更新到界面
+							final String finalRes = res;
 							mHandler1.post(new Thread(){
 								public void run() {
 									//traveltext.setText(res+"  "+new Date());
 
 									List<AttractionEntity> attList = null;
 									try {
-										attList = JsonTools.jsonAttraction(res);
+										attList = JsonTools.jsonAttraction(finalRes);
 									} catch (NetworkErrorException e) {
 										e.printStackTrace();
 										Message msg = new Message();
