@@ -32,26 +32,31 @@
     			android:text="@string/weather"
     			android:drawableTop="@drawable/ic_icon_home"
     			android:id="@+id/radio_button0"
+				android:paddingBottom="2dp"
     			style="@style/main_tab_bottom"/>
     		<RadioButton
     			android:text="@string/select"
     			android:drawableTop="@drawable/ic_icon_spot"
     			android:id="@+id/radio_button1"
+				android:paddingBottom="2dp"
     			style="@style/main_tab_bottom"/>
     		<RadioButton
     			android:text="@string/map"
     			android:drawableTop="@drawable/ic_icon_map"
     			android:id="@+id/radio_button2"
+				android:paddingBottom="2dp"
     			style="@style/main_tab_bottom"/>
     		<RadioButton
     			android:text="@string/tuijian"
     			android:drawableTop="@drawable/ic_icon_recommend"
     			android:id="@+id/radio_button3"
+				android:paddingBottom="2dp"
     			style="@style/main_tab_bottom"/>
     		<RadioButton
     			android:text="@string/tool"
     			android:drawableTop="@drawable/ic_icon_more"
     			android:id="@+id/radio_button4"
+				android:paddingBottom="2dp"
     			style="@style/main_tab_bottom"/>
     	</RadioGroup>
     </LinearLayout>

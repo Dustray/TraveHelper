@@ -7,7 +7,10 @@ import android.content.SharedPreferences;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.text.Editable;
+import android.text.InputType;
 import android.text.TextWatcher;
+import android.text.method.DigitsKeyListener;
+import android.text.method.KeyListener;
 import android.view.View;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.AdapterView;
@@ -55,7 +58,7 @@ import bzu.skyn.travehelper.util.GaodeSearchPoiAdapter;
 public class AMapActivity extends Activity implements View.OnClickListener, GeocodeSearch.OnGeocodeSearchListener, PoiSearch.OnPoiSearchListener {
 
     private MapView mMapView = null;
-    private Button btnTrafficCondition, btnSatellite, btnNaviStep, btnNaviDrive, btnNaviBike;
+    private Button btnTrafficCondition, btnSatellite, btnNaviStep, btnNaviDrive, btnNaviBike, btnSearchType;
     private EditText etInputSearch;
     private RelativeLayout searchListFrame;
     private LinearLayout letsgoFrame;
@@ -70,6 +73,7 @@ public class AMapActivity extends Activity implements View.OnClickListener, Geoc
     private PoiSearch.Query query2;
     private String myCity = "010";
     public AMapLocationClient mLocationClient = null;
+    private boolean isWordsSearch=true;//是否以关键字搜索（相反以经纬度搜索）
     //声明定位回调监听器
     public AMapLocationListener mLocationListener = new AMapLocationListener() {
         @Override
@@ -141,7 +145,9 @@ public class AMapActivity extends Activity implements View.OnClickListener, Geoc
 
             @Override
             public void afterTextChanged(Editable editable) {
-                inquireList();
+                if(isWordsSearch){
+                    inquireList();
+                }
             }
         });
         lvSearchList = (ListView) findViewById(R.id.lv_search_list);
@@ -152,6 +158,9 @@ public class AMapActivity extends Activity implements View.OnClickListener, Geoc
         btnNaviDrive.setOnClickListener(this);
         btnNaviBike = (Button) findViewById(R.id.btn_navi_bike);
         btnNaviBike.setOnClickListener(this);
+
+        btnSearchType = (Button) findViewById(R.id.btn_search_type);
+        btnSearchType.setOnClickListener(this);
     }
 
     private void inquireList() {
@@ -232,6 +241,7 @@ public class AMapActivity extends Activity implements View.OnClickListener, Geoc
         geocoderSearch.getFromLocationAsyn(query1);
     }
 
+
     @Override
     protected void onDestroy() {
         super.onDestroy();
@@ -273,13 +283,11 @@ public class AMapActivity extends Activity implements View.OnClickListener, Geoc
                     btnTrafficCondition.setBackgroundResource(R.color.switch_bg_close);
                     btnTrafficCondition.setTextColor(this.getResources().getColor(R.color.switch_tx_close));
                     FastToast.showToast(AMapActivity.this, "已关闭实时路况");
-
                     isShowTraCon = false;
                 } else {
                     aMap.setTrafficEnabled(true);//显示实时路况图层，aMap是地图控制器对象。
                     btnTrafficCondition.setBackgroundResource(R.color.switch_bg_open);
                     btnTrafficCondition.setTextColor(this.getResources().getColor(R.color.switch_tx_open));
-
                     FastToast.showToast(AMapActivity.this, "已开启实时路况");
                     isShowTraCon = true;
                 }
@@ -299,12 +307,32 @@ public class AMapActivity extends Activity implements View.OnClickListener, Geoc
                     btnSatellite.setTextColor(this.getResources().getColor(R.color.switch_tx_open));
                     btnSatellite.setText("卫星");
                     FastToast.showToast(AMapActivity.this, "已开启普通视图");
-
                     isShowSatellite = true;
                 }
                 break;
             case R.id.btn_search_go:
-                inquireList();
+                if(isWordsSearch) {
+                    //关键字搜索
+                    inquireList();
+                }else{
+                    //经纬度搜索
+                    String latLon = etInputSearch.getText().toString();
+                    double li=0 ,lo=0;
+                    try{
+                        String temp=latLon.split(",")[1];//经度
+                        li=Double.parseDouble(temp);
+                        temp=latLon.split(",")[0];//纬度
+                        lo=Double.parseDouble(temp);
+                    }catch (IndexOutOfBoundsException ex){
+                        FastToast.showToast(AMapActivity.this,"经纬度格式错误：个数不匹配");
+                        return;
+                    }catch (NumberFormatException ex){
+                        FastToast.showToast(AMapActivity.this,"经纬度格式错误：经纬度数字不匹配");
+                        return;
+                    }
+                    goSearchWithlatLon(li,lo);
+                    showOnMap(li, lo );
+                }
                 break;
             case R.id.btn_navi_step:
                 if (desNaviLatLng == null) {
@@ -345,6 +373,25 @@ public class AMapActivity extends Activity implements View.OnClickListener, Geoc
                 intent3.putExtras(bundle3);
                 startActivity(intent3);
                 break;
+            case R.id.btn_search_type:
+                if(isWordsSearch){
+                    //当前为关键字搜索，切换为经纬度
+                    isWordsSearch=false;
+                    btnSearchType.setText("经纬");
+                    FastToast.showToast(AMapActivity.this,"已切换为经纬度搜索，请以英文“,”分隔经纬度");
+                    etInputSearch.setText("");
+                    etInputSearch.setInputType(InputType.TYPE_NUMBER_FLAG_SIGNED);
+                    //etInputSearch.setKeyListener(DigitsKeyListener.getInstance("12345678,."));
+                }else{
+                    //当前为经纬度搜索，切换为关键字
+                    isWordsSearch=true;
+                    btnSearchType.setText("地名");
+                    FastToast.showToast(AMapActivity.this,"已切换为关键字搜索");
+                    etInputSearch.setText("");
+                    etInputSearch.setInputType(InputType.TYPE_CLASS_TEXT);
+
+                }
+                break;
             default:
                 break;
         }
@@ -353,6 +400,7 @@ public class AMapActivity extends Activity implements View.OnClickListener, Geoc
     @Override
     public void onRegeocodeSearched(RegeocodeResult regeocodeResult, int i) {
         FastToast.showToast(AMapActivity.this, "所在城市：" + regeocodeResult.getRegeocodeAddress().getCity());
+
         //myCity = regeocodeResult.getRegeocodeAddress().getCity();
     }
 
@@ -392,8 +440,17 @@ public class AMapActivity extends Activity implements View.OnClickListener, Geoc
         CameraUpdate mCameraUpdate = CameraUpdateFactory.newCameraPosition(new CameraPosition(
                 new LatLng(ga.getLatLonPoint().getLatitude(), ga.getLatLonPoint().getLongitude()), 15, 0, 0));
         aMap.animateCamera(mCameraUpdate);
-// 绑定 Marker 被点击事件
+    }
+    private void showOnMap(double li,double lo ) {
+        LatLng latLng = new LatLng(li,lo);
+        MarkerOptions markerO = new MarkerOptions();
+        markerO.position(latLng);
+        markerO.title("经度："+lo+"  纬度："+ li);
 
+        marker = aMap.addMarker(markerO);
+        CameraUpdate mCameraUpdate = CameraUpdateFactory.newCameraPosition(new CameraPosition(
+                new LatLng(li, lo), 15, 0, 0));
+        aMap.animateCamera(mCameraUpdate);
     }
 
     private void showOnMapPoi(PoiItem ga) {
