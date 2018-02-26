@@ -74,6 +74,7 @@ public class WeatherActivity extends Activity {
 
     protected Handler mHandler1 = new Handler();
     protected Handler mHandler2 = new Handler();
+    protected Handler mHandler3 = new Handler();
     private List<CityEntity> cityList = new ArrayList<CityEntity>();
     private List<ProvinceEntity> provinceList = new ArrayList<ProvinceEntity>();
     private List<List<CityEntity>> provinceListList = new ArrayList<List<CityEntity>>();
@@ -137,7 +138,7 @@ public class WeatherActivity extends Activity {
 //                provinceList = s1;
 //                provinceListList = s2;
 //                getCityOver = true;
-            if(DataSupport.count(ProvinceEntity.class)>0) {
+            if (DataSupport.count(ProvinceEntity.class) > 0) {
                 provinceList = DataSupport.findAll(ProvinceEntity.class);
                 List<List<CityEntity>> cityListList = new ArrayList<List<CityEntity>>();
                 for (int i = 0; i < provinceList.size(); i++) {
@@ -146,7 +147,7 @@ public class WeatherActivity extends Activity {
                 }
 
                 getCityOver = true;
-            }else{
+            } else {
 
                 FastToast.showToast(WeatherActivity.this, "正在更新城市信息,大约需要20秒");
                 new Thread() {
@@ -156,11 +157,11 @@ public class WeatherActivity extends Activity {
 //                        String secret = "6296793c56db40dfbbccf0353babe62c";//要替换成自己的
 //                        final String res = new ShowApiRequest("http://route.showapi.com/268-2", appid, secret)
 //                                .post();
-                        String res="";
+                        String res = "";
                         WebServiceConnection wsc = new WebServiceConnection();
                         try {
-                            Map<String,String> para = new HashMap<>();
-                            res=wsc.getRemoteInfo(para,"getProvinceJson");
+                            Map<String, String> para = new HashMap<>();
+                            res = wsc.getRemoteInfo(para, "getProvinceJson");
                         } catch (Exception e) {
                             e.printStackTrace();
                         }
@@ -200,6 +201,25 @@ public class WeatherActivity extends Activity {
                 msg.what = 1;
                 msg.obj = wje;
                 mhandler.sendMessage(msg);
+
+                String res = "";
+                WebServiceConnection wsc = new WebServiceConnection();
+                try {
+                    Map<String, String> para = new HashMap<>();
+                    para.put("city", city);
+                    res = wsc.getRemoteStringInfo(para, "getNowHumidityAndAirQuality");
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
+                System.out.println(res);
+
+                final String finalRes = res;
+                mHandler3.post(new Thread() {
+                    public void run() {
+                        TextView shidu_kongqi = (TextView) findViewById(R.id.shidu_kongqi);
+                        shidu_kongqi.setText(finalRes);
+                    }
+                });
             }
         }.start();
     }
@@ -215,12 +235,12 @@ public class WeatherActivity extends Activity {
 //                final String res = new ShowApiRequest("http://route.showapi.com/268-3", appid, secret)
 //                        .addTextPara("proId", entity.getIds())
 //                        .post();
-                String res="";
+                String res = "";
                 WebServiceConnection wsc = new WebServiceConnection();
                 try {
-                    Map<String,String> para = new HashMap<>();
+                    Map<String, String> para = new HashMap<>();
                     para.put("provinceid", entity.getIds());
-                    res=wsc.getRemoteInfo(para,"getCityJson");
+                    res = wsc.getRemoteInfo(para, "getCityJson");
                 } catch (Exception e) {
                     e.printStackTrace();
                 }
@@ -245,10 +265,9 @@ public class WeatherActivity extends Activity {
 //                    lds.setDataList("WeatherCityList", provinceListList);
 
 
-
                     DataSupport.saveAll(provinceList);
                     //DataSupport.saveAll(provinceListList);
-                    for(List<CityEntity> sList :provinceListList){
+                    for (List<CityEntity> sList : provinceListList) {
                         DataSupport.saveAll(sList);
                     }
                     getCityOver = true;
@@ -328,6 +347,7 @@ public class WeatherActivity extends Activity {
                     //FastToast.showToast(WeatherActivity.this,"更新天气成功");
                     break;
                 case 2:
+
                     break;
             }
         }
@@ -338,9 +358,10 @@ public class WeatherActivity extends Activity {
         //Log.i("logme", "ss22" + detail.get(0).getCity());
 
         // 取得<string>10月13日 中雨转小雨</string>中的数据
-        if(detail.get(0)==null){
-            FastToast.showToast(WeatherActivity.this,"天气信息获取失败");
-            return;}
+        if (detail.get(0) == null) {
+            FastToast.showToast(WeatherActivity.this, "天气信息获取失败");
+            return;
+        }
         String date = detail.get(0).getDate();
         // 将"10月13日 10:42:20"拆分成两个数组
         String[] date_array = date.split(" ");
@@ -423,6 +444,7 @@ public class WeatherActivity extends Activity {
         editor.putString("city", string);
         editor.commit();
     }
+
     public String readSharpPreference() {
         String city = preference.getString("city", "青岛");
         Log.i("logme", "city-----------------:" + city);
