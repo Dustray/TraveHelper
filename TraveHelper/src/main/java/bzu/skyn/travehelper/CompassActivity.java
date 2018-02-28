@@ -123,7 +123,12 @@ public class CompassActivity extends Activity {
 	       private void SetBitmapArray(int index, BitmapFactory.Options opts, int resId){
 	    	   is = resource.openRawResource(resId);
 	    	   mapArray[index] = BitmapFactory.decodeStream(is);//300*300
-	           mapWidth[index] = mapArray[index].getWidth();
+			   try {
+				   is.reset();
+			   } catch (IOException e) {
+				   e.printStackTrace();
+			   }
+			   mapWidth[index] = mapArray[index].getWidth();
 	           mapHeight[index] = mapArray[index].getHeight();
 	           mapArray[index+3] = BitmapFactory.decodeStream(is, null, opts);
 	           mapWidth[index+3] = mapArray[index+3].getWidth();

@@ -1,29 +1,195 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:pj="http://schemas.android.com/apk/res-auto"
     xmlns:bm="http://bzu.skyn.travehelper"
+    xmlns:pj="http://schemas.android.com/apk/res-auto"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    
-    android:orientation="vertical" >
+    android:background="@drawable/bg03"
 
+    android:orientation="vertical">
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="更 多 工 具"
+    android:gravity="center"
+    android:textSize="29sp"
+    android:layout_margin="30dp"
+    android:textColor="#222"
+    />
     <LinearLayout
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
-        android:layout_weight="1"
-        android:background="@drawable/bg03"        
-        android:gravity="bottom"
-        android:padding="5dip" >
-        <bzu.skyn.travehelper.controls.Carousel
-            android:id="@+id/carousel"
-            android:layout_height="fill_parent"
-            android:layout_width="fill_parent"
-            android:animationDuration="200"
-            pj:Items="@array/entries"
-            pj:SelectedItem="0"
-            pj:UseReflection="true" />"
+        android:orientation="vertical"
+        android:padding="5dip">
+        <!--<bzu.skyn.travehelper.controls.Carousel-->
+        <!--android:id="@+id/carousel"-->
+        <!--android:layout_height="fill_parent"-->
+        <!--android:layout_width="fill_parent"-->
+        <!--android:animationDuration="200"-->
+        <!--pj:Items="@array/entries"-->
+        <!--pj:SelectedItem="0"-->
+        <!--pj:UseReflection="true" />"-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#777"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"></LinearLayout>
+        <LinearLayout
+            android:id="@+id/tool_com"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
 
-     
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="20dp"
+                android:layout_weight="0.6"
+                android:src="@drawable/ic_tool_compass" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="指  南  针"
+                android:textColor="#555"
+                android:textSize="22sp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#777"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"></LinearLayout>
+        <LinearLayout
+            android:id="@+id/tool_diary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="20dp"
+                android:layout_weight="0.6"
+                android:src="@drawable/ic_tool_diary" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="日        记"
+                android:textColor="#555"
+                android:textSize="22sp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#777"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"></LinearLayout>
+        <LinearLayout
+            android:id="@+id/tool_opera"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="20dp"
+                android:layout_weight="0.6"
+                android:src="@drawable/ic_tool_operation" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="操作指南"
+                android:textColor="#555"
+                android:textSize="22sp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#777"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"></LinearLayout>
+        <LinearLayout
+            android:id="@+id/tool_calendar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="20dp"
+                android:layout_weight="0.6"
+                android:src="@drawable/ic_tool_calendar" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="日        历"
+                android:textColor="#555"
+                android:textSize="22sp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#777"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"></LinearLayout>
+        <LinearLayout
+            android:id="@+id/tool_light"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="20dp"
+                android:layout_weight="0.6"
+                android:src="@drawable/ic_tool_light" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="手  电  筒"
+                android:textColor="#555"
+                android:textSize="22sp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#777"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"></LinearLayout>
     </LinearLayout>
 
 </LinearLayout>
