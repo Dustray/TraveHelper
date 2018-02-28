@@ -186,7 +186,7 @@ public class SoapUtil {
 
     private static List<WeatherJsonEntity> jsonWeather(JSONObject json){
 
-        Log.i("logme","StringWeather测试***:"+json);
+        //Log.i("logme","StringWeather测试***:"+json);
         String jsonString = json.toString();
         List<WeatherJsonEntity> listWeather = new ArrayList<WeatherJsonEntity>();
         JsonParser parser = new JsonParser();// json 解析器
@@ -257,7 +257,7 @@ public class SoapUtil {
             JsonObject itemSport = itemSuggestion.get("sport").getAsJsonObject();
             String sport = itemSport.get("brief").getAsString();
 
-            Log.i("logme","$jlocation:"+itemDressing.get("brief").getAsString());
+            //Log.i("logme","$jlocation:"+itemDressing.get("brief").getAsString());
             weather.setLifeIndex("生活小贴士：穿衣："+dress+"；洗车："+carWashing+"；旅游："+travel+"；感冒："+flu+"；运动："+sport+"。");
 
             weather.setUv(uv);

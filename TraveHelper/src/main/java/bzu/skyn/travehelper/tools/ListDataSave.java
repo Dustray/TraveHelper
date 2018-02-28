@@ -39,7 +39,7 @@ public class ListDataSave {
         Gson gson = new Gson();
         //转换成json数据，再保存
         String strJson = gson.toJson(datalist);
-        Log.e("logme", "getDataList:" +strJson );
+        //Log.e("logme", "getDataList:" +strJson );
         editor.clear();
         editor.putString(tag, strJson);
         editor.commit();

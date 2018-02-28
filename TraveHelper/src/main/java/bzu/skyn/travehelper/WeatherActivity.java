@@ -1,10 +1,12 @@
 package bzu.skyn.travehelper;
 
+import java.net.SocketTimeoutException;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.concurrent.TimeoutException;
 
 import org.ksoap2.serialization.SoapObject;
 import org.litepal.LitePal;
@@ -107,14 +109,14 @@ public class WeatherActivity extends Activity {
 
                 @Override
                 public void onClick(View v) {
-                    // TODO Auto-generated method stub
                     switch (v.getId()) {
                         case R.id.city_button:
-
-                            show_dialog(CITY);
-
+                            try {
+                                show_dialog(CITY);
+                            } catch (Exception ex) {
+                                showToast("城市信息加载失败");
+                            }
                             break;
-
                         default:
                             break;
                     }
@@ -124,7 +126,7 @@ public class WeatherActivity extends Activity {
             ListDataSave lds = new ListDataSave(WeatherActivity.this, "weather");
             List<WeatherJsonEntity> s = lds.getDataList("WeatherList");
             if (s.size() != 0) {
-                Log.e("logme", "sss" + lds.getDataList("WeatherList").toString());
+                //Log.e("logme", "sss" + lds.getDataList("WeatherList").toString());
                 refresh(s);
             }
 
@@ -162,8 +164,16 @@ public class WeatherActivity extends Activity {
                         try {
                             Map<String, String> para = new HashMap<>();
                             res = wsc.getRemoteInfo(para, "getProvinceJson");
+                        } catch (SocketTimeoutException e) {
+                            e.printStackTrace();
+                            //Log.i("logme", "LongTimeError" + e.toString());
+                            FastToast.showToast(WeatherActivity.this, "获取城市信息超时");
+                            getCityOver = true;
+                            return;
                         } catch (Exception e) {
                             e.printStackTrace();
+                            //Log.e("logme", "城市更新" + e.toString());
+                            return;
                         }
                         System.out.println(res);
                         //把返回内容通过handler对象更新到界面
@@ -181,10 +191,7 @@ public class WeatherActivity extends Activity {
                         });
                     }
                 }.start();
-
             }
-
-
         } else {
             Toast.makeText(WeatherActivity.this, "无网络连接，请确认是否连接网络！", Toast.LENGTH_LONG).show();
         }
@@ -241,8 +248,15 @@ public class WeatherActivity extends Activity {
                     Map<String, String> para = new HashMap<>();
                     para.put("provinceid", entity.getIds());
                     res = wsc.getRemoteInfo(para, "getCityJson");
+                } catch (SocketTimeoutException e) {
+                    e.printStackTrace();
+                    Log.i("logme", "LongTimeError" + e.toString());
+                    FastToast.showToast(WeatherActivity.this, "获取城市信息超时");
+                    getCityOver = true;
+                    return;
                 } catch (Exception e) {
                     e.printStackTrace();
+                    showToast("城市信息加载失败");
                 }
                 cityList = JsonTools.jsonCity(res);
                 provinceListList.add(cityList);
@@ -263,8 +277,6 @@ public class WeatherActivity extends Activity {
 //                    ListDataSave lds = new ListDataSave(WeatherActivity.this, "cityList");
 //                    lds.setDataList("WeatherProList", provinceList);
 //                    lds.setDataList("WeatherCityList", provinceListList);
-
-
                     DataSupport.saveAll(provinceList);
                     //DataSupport.saveAll(provinceListList);
                     for (List<CityEntity> sList : provinceListList) {
@@ -277,8 +289,8 @@ public class WeatherActivity extends Activity {
         }
     };
 
-    public void showTast(String string) {
-        Toast.makeText(WeatherActivity.this, string + "请确认是否连接网络！", Toast.LENGTH_SHORT).show();
+    public void showToast(String string) {
+        Toast.makeText(WeatherActivity.this, string + "请检查网络", Toast.LENGTH_SHORT).show();
 
     }
 
